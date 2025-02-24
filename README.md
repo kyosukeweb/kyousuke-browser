@@ -35,5 +35,5 @@ Hey, we said in theory. We never guarenteed it.
 ## Why don't you open-source the backend (C/C++) code?
 We built it in artifact mode. In other words, we only modified the HTML/JavaScript/CSS/locales/etc. We've open-sourced all the code we remember modifying, with the exception of the C++ code. The Web Honorifics API was going to be put in the C/C++ code. But it kept failing to compile for some unknown reason, so I switched back to Artifact Mode and shoved it in the webcompat extension (bc I don't actually know C++ 💀). Artifact Mode uses pre-compiled C/C++/WebIDL, so it's using the same version you get from Mozilla. If I ever need (or want) to modify the C++ code, I'll put it up here, but I haven't changed anything right now, so...
 
-## What installer did you use?
-The installer was made using Inno Setup (https://jrsoftware.org/isinfo.php)
+## Why is some of the source code missing?
+We'll upload it later, we got rate-limited by GitHub (lol)

@@ -3145,6 +3145,7 @@ Dagny/MQ
 Daguerre/MQ
 Dagwood/MQ
 Dahomey/MQ
+Daima/MQ
 Daimler/MQ
 Daisy/MQ
 Dakar/MQ
@@ -4565,6 +4566,7 @@ Friedman/MQ
 Friedmann/MQ
 Friedrich
 Friend/SMQ
+Frieren/MQ
 Frigga/MQ
 Frigidaire/MQ
 Frisbee/MQ
@@ -5344,6 +5346,7 @@ Hampton/MQ
 Hamsun/MQ
 Han/SMQ
 Hana/MQ
+Hanako/MQ
 Hanan/MQ
 Hancock/MQ
 Handel/MQ
@@ -5673,6 +5676,7 @@ Himalaya/SMQ
 Himalayan
 Himalayas/MQ
 Himmler/MQ
+Hinata/MQ
 Hinayana/MQ
 Hindemith/MQ
 Hindenburg/MQ
@@ -6063,6 +6067,7 @@ Ionic/SMQ
 Iowa/SMQ
 Iowan/MQS
 Iphigenia/MQ
+Ippo/MQ
 Ipswich
 Iqaluit/MQ
 Iqbal/MQ
@@ -6579,6 +6584,7 @@ Kahlua/MQ
 Kahului/MQ
 Kai/MQ
 Kaia/MQ
+kaiju/MQ
 Kaifeng/MQ
 Kaila/MQ
 Kailua/MQ
@@ -6629,6 +6635,7 @@ Karachi/MQ
 Karaganda/MQ
 Karakorum/MQ
 Karamazov/MQ
+Karasuno/MQ
 Kare/MQ
 Kareem/MQ
 Karel/MQ
@@ -7028,6 +7035,8 @@ Kyla/MQ
 Kyle/MQ
 Kylie/MQ
 Kym/MQ
+Kyōsuke/MQ
+Kyousuke/MQ
 Kyoto/MQ
 Kyrgyzstan/MQ
 Kyushu/MQ
@@ -8806,6 +8815,7 @@ Muhammadan/MQS
 Muhammadanism/SMQ
 Muir/MQ
 Mujib/MQ
+Mujica/MQ
 Mulder/MQ
 Mullen/MQ
 Muller/MQ
@@ -9030,6 +9040,7 @@ Nb/MQ
 Nd/MQ
 Ndjamena/MQ
 Ne/MQ
+nen/MQ
 NeWS
 NeWSes
 Neal/MQ
@@ -9063,6 +9074,7 @@ Nehemiah/MQ
 Nehru/MQ
 Neil/SMQ
 Neill/MQ
+neko/MQ
 Nelda/MQ
 Nell/MQ
 Nelle/MQ
@@ -9228,6 +9240,7 @@ Noel/SMQ
 Noelle/MQ
 Noemi/MQ
 Nokia/MQ
+Nokotan/MQ
 Nola/MQ
 Nolan/MQ
 Noland/MQ
@@ -11019,6 +11032,7 @@ Sahel/MQ
 Saigon/MQ
 Saiph/MQ
 Sakai/MQ
+Sakamoto/MQ
 Sakha/MQ
 Sakhalin/MQ
 Sakharov/MQ
@@ -11462,6 +11476,7 @@ Shi'ite/MQ
 Shields/MQ
 Shiite/MQS
 Shijiazhuang/MQ
+Shikanokonokonokokoshitantan/MQ
 Shikoku/MQ
 Shillong/MQ
 Shiloh/MQ
@@ -12056,6 +12071,7 @@ Tahiti/MQ
 Tahitian/MQS
 Tahoe/MQ
 Taichung/MQ
+Taiki/MQ
 Tainan
 Taine/MQ
 Taipei/MQ
@@ -12065,6 +12081,7 @@ Taiwan/MQ
 Taiwanese/MQ
 Taiyuan/MQ
 Tajikistan/MQ
+Tajiri/MQ
 Taklamakan/MQ
 Talbert/MQ
 Talbot/MQ
@@ -15971,7 +15988,7 @@ avast
 avatar/MQS
 avaunt
 avdp
-ave
+ave/MQ
 avenge/ZGDRS
 avenger/MQ
 avenue/MQS
@@ -16218,6 +16235,7 @@ bailsmen
 bairn/MQS
 bait/SGMD
 baize/MQ
+baka/MQ
 bake/DRSMZG
 baked/U
 baker/MQ
@@ -24670,6 +24688,7 @@ edelweiss/MQ
 edema/SMQ
 edge/MQZGJDRS
 edger/MQ
+Edgerunners/MQ
 edgeways
 edgewise
 edgily
@@ -29404,6 +29423,8 @@ hagiography/SMQ
 hah
 hahnium/MQ
 haiku/MQ
+Haikyu/MQ
+Haikyuu/MQ
 hail/MQDGS
 hailstone/MQS
 hailstorm/MQS
@@ -29438,6 +29459,7 @@ hairstyle/MQGS
 hairstylist/SMQ
 hairy/TRP
 haj
+Hajime/MQ
 hajj/MQ
 hajjes
 hajji/SMQ
@@ -33139,6 +33161,8 @@ kopeck/MQS
 kopek/SMQ
 korma
 kosher/DSG
+Koshi/MQ
+Koshitan/MQ
 kowtow/GMDS
 kph
 kraal/SMQ
@@ -34320,6 +34344,7 @@ ludicrous/YP
 ludicrousness/MQ
 ludo
 luff/DSG
+Luffy/MQ
 lug/SMQ
 luge/S
 luggage/MQ
@@ -44116,6 +44141,7 @@ sago/MQ
 saguaro/MQS
 sahib/MQS
 said/U
+Saiyan/MQ
 sail/GMDSJ
 sailboard/MQRZGS
 sailboarder/MQ
@@ -44336,6 +44362,7 @@ satisfying/U
 satisfyingly
 sativa
 satori/MQ
+Satoshi/MQ
 satrap/SMQ
 satsuma/S
 saturate/DSGN
@@ -53586,6 +53613,7 @@ zestful/YP
 zestfulness/MQ
 zesty/RT
 zeta/MQS
+zetsu/MQ
 zigzag/SMQ
 zigzagged
 zigzagging

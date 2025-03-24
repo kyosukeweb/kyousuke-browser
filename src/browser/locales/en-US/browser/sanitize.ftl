@@ -14,13 +14,13 @@ sanitize-dialog-title2 =
     .style = min-width: 34em
 
 sanitize-dialog-title =
-    .title = Clear Recent History
+    .title = Clear recent history
     .style = min-width: 34em
 
 # When "Time range to clear" is set to "Everything", this message is used for the
 # title instead of dialog-title.
 sanitize-dialog-title-everything =
-    .title = Clear All History
+    .title = Clear all history
     .style = min-width: 34em
 
 clear-data-settings-label = When closed, { -brand-short-name } should automatically clear all

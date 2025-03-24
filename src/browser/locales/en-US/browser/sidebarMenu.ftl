@@ -17,7 +17,7 @@ sidebar-menu-megalist =
   .label = Passwords
 
 sidebar-menu-close =
-  .label = Close Sidebar
+  .label = Close
 
 sidebar-close-button =
-  .tooltiptext = Close sidebar
+  .tooltiptext = Close

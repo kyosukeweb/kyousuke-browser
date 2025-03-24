@@ -26,14 +26,14 @@ webext-quarantine-confirmation-title =
     Run { $addonName } on restricted sites?
 
 webext-quarantine-confirmation-line-1 =
-    To protect your data, this add-on is not allowed on this site.
+    To protect your data, this addon is not allowed on this site.
 webext-quarantine-confirmation-line-2 =
-    Allow this add-on if you trust it to read and change your data on sites restricted by { -vendor-short-name }.
+    Allow this addon if you trust it to read and change your data on sites restricted by { -vendor-short-name }.
 
 webext-quarantine-confirmation-allow =
     .label = Allow
     .accesskey = A
 
 webext-quarantine-confirmation-deny =
-    .label = Don’t allow
+    .label = Don’t Allow
     .accesskey = D

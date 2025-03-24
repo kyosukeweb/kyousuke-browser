@@ -5,15 +5,15 @@
 xpinstall-prompt = { -brand-short-name } prevented this site from asking you to install software on your computer.
 
 ## Variables:
-##   $host (String): The hostname of the site the add-on is being installed from.
+##   $host (String): The hostname of the site the addon is being installed from.
 
-xpinstall-prompt-header = Allow { $host } to install an add-on?
-xpinstall-prompt-message = You are attempting to install an add-on from { $host }. Make sure you trust this site before continuing.
+xpinstall-prompt-header = Allow { $host } to install an addon?
+xpinstall-prompt-message = You are attempting to install an addon from { $host }. Make sure you trust this site before continuing.
 
 ##
 
-xpinstall-prompt-header-unknown = Allow an unknown site to install an add-on?
-xpinstall-prompt-message-unknown = You are attempting to install an add-on from an unknown site. Make sure you trust this site before continuing.
+xpinstall-prompt-header-unknown = Allow an unknown site to install an addon?
+xpinstall-prompt-message-unknown = You are attempting to install an addon from an unknown site. Make sure you trust this site before continuing.
 
 xpinstall-prompt-dont-allow =
     .label = Don’t Allow
@@ -35,7 +35,7 @@ xpinstall-prompt-install =
 
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
-site-permission-install-first-prompt-midi-header = This site is requesting access to your MIDI (Musical Instrument Digital Interface) devices. Device access can be enabled by installing an add-on.
+site-permission-install-first-prompt-midi-header = This site is requesting access to your MIDI (Musical Instrument Digital Interface) devices. Device access can be enabled by installing an addon.
 site-permission-install-first-prompt-midi-message = This access is not guaranteed to be safe. Only continue if you trust this site.
 
 ##
@@ -46,17 +46,17 @@ xpinstall-disabled-button =
     .label = Enable
     .accesskey = n
 
-# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# This message is shown when the installation of an addon is blocked by enterprise policy.
 # Variables:
-#   $addonName (String): the name of the add-on.
-#   $addonId (String): the ID of add-on.
+#   $addonName (String): the name of the addon.
+#   $addonId (String): the ID of addon.
 addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) is blocked by your organization.
-# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+# This message is shown when the installation of addons from a domain is blocked by enterprise policy.
 addon-install-domain-blocked-by-policy = Your organization prevented this site from asking you to install software on your computer.
-addon-install-full-screen-blocked = Add-on installation is not allowed while in or before entering fullscreen mode.
+addon-install-full-screen-blocked = addon installation is not allowed while in or before entering fullscreen mode.
 
 # Variables:
-#   $addonName (String): the localized name of the sideloaded add-on.
+#   $addonName (String): the localized name of the sideloaded addon.
 webext-perms-sideload-menu-item = { $addonName } added to { -brand-short-name }
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
@@ -65,25 +65,25 @@ webext-perms-update-menu-item = { $addonName } requires new permissions
 # This message is shown when one or more extensions have been imported from a
 # different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
-webext-imported-addons = Finalize installing add-ons imported to { -brand-short-name }
+webext-imported-addons = Finalize installing addons imported to { -brand-short-name }
 
-## Add-on removal warning
+## addon removal warning
 
 # Variables:
-#  $name (String): The name of the add-on that will be removed.
+#  $name (String): The name of the addon that will be removed.
 addon-removal-title = Remove { $name }?
 # Variables:
-#   $name (String): the name of the add-on which is about to be removed.
+#   $name (String): the name of the extension which is about to be removed.
 addon-removal-message = Remove { $name } from { -brand-shorter-name }?
 addon-removal-button = Remove
-addon-removal-abuse-report-checkbox = Report this add-on to { -vendor-short-name }
+addon-removal-abuse-report-checkbox = Report this addon to { -vendor-short-name }
 
 # Variables:
-#   $addonCount (Number): the number of add-ons being downloaded
+#   $addonCount (Number): the number of addons being downloaded
 addon-downloading-and-verifying =
     { $addonCount ->
-        [1] Downloading and verifying add-on…
-       *[other] Downloading and verifying { $addonCount } add-ons…
+        [1] Downloading and verifying addon…
+       *[other] Downloading and verifying { $addonCount } addons…
     }
 addon-download-verifying = Verifying
 
@@ -95,40 +95,40 @@ addon-install-accept-button =
     .accesskey = A
 
 ## Variables:
-##   $addonCount (Number): the number of add-ons being installed
+##   $addonCount (Number): the number of addons being installed
 
 addon-confirm-install-message =
     { $addonCount ->
-        [1] This site would like to install an add-on in { -brand-short-name }:
-       *[other] This site would like to install { $addonCount } add-ons in { -brand-short-name }:
+        [1] This site would like to install an addon in { -brand-short-name }:
+       *[other] This site would like to install { $addonCount } addons in { -brand-short-name }:
     }
 addon-confirm-install-unsigned-message =
     { $addonCount ->
-        [1] Caution: This site would like to install an unverified add-on in { -brand-short-name }. Proceed at your own risk.
-       *[other] Caution: This site would like to install { $addonCount } unverified add-ons in { -brand-short-name }. Proceed at your own risk.
+        [1] Caution: This site would like to install an unverified addon in { -brand-short-name }. Proceed at your own risk.
+       *[other] Caution: This site would like to install { $addonCount } unverified addons in { -brand-short-name }. Proceed at your own risk.
     }
 # Variables:
-#   $addonCount (Number): the number of add-ons being installed (at least 2)
+#   $addonCount (Number): the number of addons being installed (at least 2)
 addon-confirm-install-some-unsigned-message =
     { $addonCount ->
-       *[other] Caution: This site would like to install { $addonCount } add-ons in { -brand-short-name }, some of which are unverified. Proceed at your own risk.
+       *[other] Caution: This site would like to install { $addonCount } addons in { -brand-short-name }, some of which are unverified. Proceed at your own risk.
     }
 
-## Add-on install errors
+## addon install errors
 ## Variables:
-##   $addonName (String): the add-on name.
+##   $addonName (String): the addon name.
 
-addon-install-error-network-failure = The add-on could not be downloaded because of a connection failure.
-addon-install-error-incorrect-hash = The add-on could not be installed because it does not match the add-on { -brand-short-name } expected.
-addon-install-error-corrupt-file = The add-on downloaded from this site could not be installed because it appears to be corrupt.
+addon-install-error-network-failure = The addon could not be downloaded because of a connection failure.
+addon-install-error-incorrect-hash = The addon could not be installed because it does not match the addon { -brand-short-name } expected.
+addon-install-error-corrupt-file = The addon downloaded from this site could not be installed because it appears to be corrupt.
 addon-install-error-file-access = { $addonName } could not be installed because { -brand-short-name } cannot modify the needed file.
-addon-install-error-not-signed = { -brand-short-name } has prevented this site from installing an unverified add-on.
-addon-install-error-invalid-domain = The add-on { $addonName } can not be installed from this location.
-addon-local-install-error-network-failure = This add-on could not be installed because of a filesystem error.
-addon-local-install-error-incorrect-hash = This add-on could not be installed because it does not match the add-on { -brand-short-name } expected.
-addon-local-install-error-corrupt-file = This add-on could not be installed because it appears to be corrupt.
+addon-install-error-not-signed = { -brand-short-name } has prevented this site from installing an unverified addon.
+addon-install-error-invalid-domain = The addon { $addonName } can not be installed from this location.
+addon-local-install-error-network-failure = This addon could not be installed because of a filesystem error.
+addon-local-install-error-incorrect-hash = This addon could not be installed because it does not match the addon { -brand-short-name } expected.
+addon-local-install-error-corrupt-file = This addon could not be installed because it appears to be corrupt.
 addon-local-install-error-file-access = { $addonName } could not be installed because { -brand-short-name } cannot modify the needed file.
-addon-local-install-error-not-signed = This add-on could not be installed because it has not been verified.
+addon-local-install-error-not-signed = This addon could not be installed because it has not been verified.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } could not be installed because it is not compatible with { -brand-short-name } { $appVersion }.

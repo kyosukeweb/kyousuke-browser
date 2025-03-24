@@ -2,22 +2,22 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-search = Do Not Track (Legacy)
+do-not-track-removal = We no longer support the “Do Not Track” signal
+do-not-track-learn-more = Learn more
 
 do-not-track-description =
-    .label = Tell websites not to track me (legacy)
+    .label = Tell websites not to track me
 
-web-honorifics-description =
-    .label = Tell websites and add-ons to use honorifics (experimental)
-
-do-not-track-removal = Learn more
-do-not-track-learn-more = Learn more
+do-not-track-search = Do Not Track (DNT)
 
 global-privacy-control-description =
     .label = Tell websites not to sell or share my data
     .accesskey = s
 
 non-technical-privacy-header = Website Privacy Preferences
+
+permissions-battery-monitor-details =
+    .label = Allow websites to see your battery level
 
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
@@ -36,7 +36,7 @@ settings-page-title = Settings
 # Do not translate.
 search-input-box2 =
     .style = width: 15.4em
-    .placeholder = Find in settings
+    .placeholder = Find in Settings
 
 managed-notice = Your browser is being managed by your organization.
 managed-notice-info-icon =
@@ -74,8 +74,13 @@ pane-experimental-reset =
   .label = Restore Defaults
   .accesskey = R
 
-help-button-label = { -brand-short-name } Help
-addons-button-label = Add-ons
+help-button-label = { -brand-short-name } Support
+addons-button-label = Extensions & Themes
+
+honorifics-category-title = Honorifics
+honorifics-checkbox-title = 
+    .label=Tell websites and add-ons to use honorifics
+honorifics-checkbox-search = Web Honorifics
 
 focus-search =
     .key = f
@@ -90,7 +95,7 @@ feature-disable-requires-restart = { -brand-short-name } must restart to disable
 should-restart-title = Restart { -brand-short-name }
 should-restart-ok = Restart Now
 cancel-no-restart-button = Cancel
-restart-later = Maybe Later
+restart-later = Restart Later
 
 ## Extension Control Notifications
 ##
@@ -127,7 +132,7 @@ extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $na
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = To enable the add-on go to <img data-l10n-name="addons-icon"/> Add-ons in the <img data-l10n-name="menu-icon"/> menu.
+extension-controlled-enable = To enable the extension go to <img data-l10n-name="addons-icon"/> Add-ons in the <img data-l10n-name="menu-icon"/> menu.
 
 ## Preferences UI Search Results
 
@@ -144,14 +149,14 @@ search-results-help-link = Need help? Visit <a data-l10n-name="url">{ -brand-sho
 startup-header = Startup
 
 always-check-default =
-    .label = Always check if { -brand-short-name } is your main browser
+    .label = Always check if { -brand-short-name } is your default browser
     .accesskey = y
 
-is-default = { -brand-short-name } is your main browser
-is-not-default = { -brand-short-name } is not your main browser
+is-default = { -brand-short-name } is currently your default browser
+is-not-default = { -brand-short-name } is not your default browser
 
 set-as-my-default-browser =
-    .label = Make default…
+    .label = Make Default…
     .accesskey = D
 
 startup-restore-windows-and-tabs =
@@ -159,7 +164,7 @@ startup-restore-windows-and-tabs =
     .accesskey = s
 
 windows-launch-on-login =
-    .label = Open { -brand-short-name } when your computer turns on
+    .label = Open { -brand-short-name } automatically when your computer starts up
     .accesskey = O
 windows-launch-on-login-disabled = This preference has been disabled in Windows. To change, visit <a data-l10n-name="startup-link">Startup Apps</a> in System settings.
 windows-launch-on-login-profile-disabled = Enable this preference by checking “{ profile-manager-use-selected.label }” in the “Choose User Profile” window.
@@ -168,10 +173,8 @@ startup-restore-warn-on-quit =
     .label = Warn you when quitting the browser
 
 disable-extension =
-    .label = Disable add-on
+    .label = Disable Addon
 
-
-preferences-honorifics-header = Honorifics
 preferences-data-migration-header = Import Browser Data
 preferences-data-migration-description = Import bookmarks, passwords, history, and autofill data into { -brand-short-name }.
 preferences-data-migration-button =
@@ -317,11 +320,23 @@ preferences-web-appearance-override-warning2 =
 
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
-preferences-web-appearance-footer = Manage { -brand-short-name } themes in <a data-l10n-name="themes-link">Add-ons & Themes</a>
+preferences-web-appearance-footer = Manage { -brand-short-name } themes in <a data-l10n-name="themes-link">Addons & Themes</a>
 
-preferences-colors-header = Colors
+preferences-contrast-control-header = Contrast Control
 
-preferences-colors-description = Override { -brand-short-name }’s default colors for text, website backgrounds, and links.
+preferences-contrast-control-description = Websites have a variety of foreground and background colors. Configure { -brand-short-name } to use the same colors across websites for improved readability.
+
+preferences-contrast-control-use-platform-settings =
+    .label = Automatic (use system settings)
+    .accesskey = A
+
+preferences-contrast-control-off =
+    .label = Off
+    .accesskey = O
+
+preferences-contrast-control-custom =
+    .label = Custom
+    .accesskey = C
 
 preferences-colors-manage-button =
     .label = Manage Colors…
@@ -656,7 +671,7 @@ browsing-media-control =
 browsing-media-control-learn-more = Learn more
 
 browsing-cfr-recommendations =
-    .label = Recommend add-ons as you browse
+    .label = Recommend extensions as you browse
     .accesskey = R
 browsing-cfr-features =
     .label = Recommend features as you browse
@@ -726,7 +741,7 @@ home-prefs-content-header2 = { -firefox-home-brand-name } Content
 home-prefs-content-description2 = Choose what content you want on your { -firefox-home-brand-name } screen.
 
 home-prefs-search-header =
-    .label = Web Search
+    .label = Search
 home-prefs-shortcuts-header =
     .label = Shortcuts
 home-prefs-shortcuts-description = Sites you save or visit
@@ -741,7 +756,7 @@ home-prefs-recommended-by-description-generic = Exceptional content curated by t
 
 home-prefs-recommended-by-learn-more = How it works
 home-prefs-recommended-by-option-sponsored-stories =
-    .label = Sponsored stories
+    .label = Include ads
 home-prefs-recommended-by-option-recent-saves =
     .label = Show Recent Saves
 
@@ -775,9 +790,9 @@ home-prefs-sections-rows-option =
 
 search-engine-default-header = Default Search Engine
 search-engine-default-desc-2 = This is your default search engine in the address bar and search bar. You can switch it at any time.
-search-engine-default-private-desc-2 = Choose a different default search engine for Zetsu mode only
+search-engine-default-private-desc-2 = Choose a different default search engine for Private Windows only
 search-separate-default-engine =
-    .label = Use this search engine in Zetsu mode
+    .label = Use this search engine in Private Windows
     .accesskey = U
 
 search-suggestions-header = Search Suggestions
@@ -807,7 +822,7 @@ search-show-suggestions-above-history-option =
     .label = Show search suggestions ahead of browsing history in address bar results
 
 search-show-suggestions-private-windows =
-    .label = Show search suggestions in Zetsu mode
+    .label = Show search suggestions in Private Windows
 
 search-suggestions-cant-show = Search suggestions will not be shown in location bar results because you have configured { -brand-short-name } to never remember history.
 
@@ -994,7 +1009,7 @@ sync-engine-payment-methods2 =
 
 sync-engine-addons =
     .label = Add-ons
-    .tooltiptext = Add-ons and themes for Firefox desktop
+    .tooltiptext = Extensions and themes for Firefox desktop
     .accesskey = A
 
 sync-engine-settings =
@@ -1148,10 +1163,10 @@ history-remember-option-custom =
     .label = Use custom settings for history
 
 history-remember-description = { -brand-short-name } will remember your browsing, download, form, and search history.
-history-dontremember-description = { -brand-short-name } will use the same settings as Zetsu mode, and will not remember any history as you browse the Web.
+history-dontremember-description = { -brand-short-name } will use the same settings as private browsing, and will not remember any history as you browse the Web.
 
 history-private-browsing-permanent =
-    .label = Always use Zetsu mode
+    .label = Always use private browsing mode
     .accesskey = p
 
 history-remember-browser-option =
@@ -1234,7 +1249,7 @@ sitedata-cookies-exceptions =
 ## Privacy Section - Cookie Banner Blocking
 
 cookie-banner-blocker-header = Cookie Banner Blocker
-cookie-banner-blocker-description = When a site asks if they can use cookies in Zetsu mode, { -brand-short-name } automatically refuses for you. Only on supported sites.
+cookie-banner-blocker-description = When a site asks if they can use cookies in private browsing mode, { -brand-short-name } automatically refuses for you. Only on supported sites.
 cookie-banner-learn-more = Learn more
 cookie-banner-blocker-checkbox-label =
     .label = Automatically refuse cookie banners
@@ -1244,6 +1259,16 @@ cookie-banner-blocker-checkbox-label =
 addressbar-header = Address Bar
 
 addressbar-suggest = When using the address bar, suggest
+
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Address Bar — { -firefox-suggest-brand-name }
+
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Choose the type of suggestions that appear in the address bar.
+
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Learn more
 
 addressbar-locbar-history-option =
     .label = Browsing history
@@ -1277,7 +1302,21 @@ addressbar-locbar-showtrendingsuggestions-option =
     .label = Show trending search suggestions
     .accesskey = t
 
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+  .label = Suggestions from { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Get suggestions from the web related to your search.
+
+addressbar-locbar-suggest-sponsored-option =
+  .label = Suggestions from sponsors
+addressbar-locbar-suggest-sponsored-desc = Support { -brand-short-name } with occasional sponsored suggestions.
+
 addressbar-quickactions-learn-more = Learn more
+
+addressbar-dismissed-suggestions-label = Dismissed suggestions
+addressbar-restore-dismissed-suggestions-description = Restore dismissed suggestions from sponsors and { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+  .label = Restore
 
 ## Privacy Section - Content Blocking
 
@@ -1315,10 +1354,10 @@ content-blocking-etp-strict-desc = Stronger protection, but may cause some sites
 content-blocking-etp-custom-desc = Choose which trackers and scripts to block.
 content-blocking-etp-blocking-desc = { -brand-short-name } blocks the following:
 
-content-blocking-private-windows = Tracking content in Zetsu mode
+content-blocking-private-windows = Tracking content in Private Windows
 content-blocking-cross-site-cookies-in-all-windows2 = Cross-site cookies in all windows
 content-blocking-cross-site-tracking-cookies = Cross-site tracking cookies
-content-blocking-all-cross-site-cookies-private-windows = Cross-site cookies in Zetsu mode
+content-blocking-all-cross-site-cookies-private-windows = Cross-site cookies in Private Windows
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cross-site tracking cookies, and isolate remaining cookies
 content-blocking-social-media-trackers = Social media trackers
 content-blocking-all-cookies = All cookies
@@ -1356,7 +1395,7 @@ content-blocking-tracking-protection-option-all-windows =
   .label = In all windows
   .accesskey = A
 content-blocking-option-private =
-  .label = Only in Zetsu mode
+  .label = Only in private windows
   .accesskey = p
 content-blocking-tracking-protection-change-block-list = Change block list
 
@@ -1485,8 +1524,8 @@ collection-studies-description = Try out features and ideas before they’re rel
 collection-studies-link = View { -brand-short-name } studies
 
 addon-recommendations2 =
-    .label = Allow personalized add-on recommendations
-addon-recommendations-description = Get add-on recommendations to improve your browsing experience.
+    .label = Allow personalized extension recommendations
+addon-recommendations-description = Get extension recommendations to improve your browsing experience.
 
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -1576,10 +1615,10 @@ httpsonly-description3 = Only allows secure connections to websites. { -brand-sh
 httpsonly-learn-more2 = How HTTPS-Only works
 
 httpsonly-radio-enabled =
-    .label = Force HTTPS in all windows
+    .label = Enable HTTPS-Only Mode in all windows
 
 httpsonly-radio-enabled-pbm =
-    .label = Force HTTPS in Zetsu mode only
+    .label = Enable HTTPS-Only Mode in private windows only
 
 httpsonly-radio-disabled3 =
     .label = Don’t enable HTTPS-Only Mode

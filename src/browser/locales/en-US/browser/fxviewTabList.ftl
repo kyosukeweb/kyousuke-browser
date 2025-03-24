@@ -37,7 +37,7 @@ fxviewtabrow-forget-about-this-site = Forget About This Site…
     .accesskey = F
 fxviewtabrow-open-in-window = Open in New Window
     .accesskey = N
-fxviewtabrow-open-in-private-window = Open in New Private Window
+fxviewtabrow-open-in-private-window = Open in Zetsu Mode
     .accesskey = P
 # “Bookmark” is a verb, as in "Bookmark this page" (add to bookmarks).
 fxviewtabrow-add-bookmark = Bookmark…

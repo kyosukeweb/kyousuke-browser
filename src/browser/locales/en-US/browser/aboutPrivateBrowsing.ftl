@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-privatebrowsingpage-open-private-window-label = Open a window with Zetsu
+privatebrowsingpage-open-private-window-label = Launch zetsu mode
     .accesskey = P
 about-private-browsing-search-placeholder = Search the web
 about-private-browsing-info-title = You’re in Zetsu Mode
@@ -18,9 +18,9 @@ about-private-browsing-handoff-no-engine =
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff-text = Search with { $engine } or enter address
 about-private-browsing-handoff-text-no-engine = Search or enter address
-about-private-browsing-not-private = This window isn't using Zetsu right now.
-about-private-browsing-info-description-private-window = Zetsu Mode: { -brand-short-name }tries to hide as much Aura as we can when you’re in Zetsu Mode, but we can’t guarantee we won’t slip up somewhere.
-about-private-browsing-info-description-simplified = { -brand-short-name } tries to hide as much Aura as we can when you’re in Zetsu Mode, but we can’t guarantee we won’t slip up somewhere.
+about-private-browsing-not-private = You’re not in Zetsu Mode right now.
+about-private-browsing-info-description-private-window = Zetsu Mode: { -brand-short-name } clears your search and browsing history when you leave zetsu mode. This doesn’t make you anonymous.
+about-private-browsing-info-description-simplified = { -brand-short-name } clears your search and browsing history when you leave zetsu mode, but this doesn’t make you anonymous.
 about-private-browsing-learn-more-link = Learn more
 
 about-private-browsing-hide-activity = Hide your activity and location, everywhere you browse
@@ -43,7 +43,7 @@ about-private-browsing-focus-promo-text-c = { -focus-brand-name } clears your hi
 # in a private window.
 # Variables:
 #   $engineName (String) - The engine name that will currently be used for the private window.
-about-private-browsing-search-banner-title = { $engineName } is your default search engine in Zetsu Mode
+about-private-browsing-search-banner-title = { $engineName } is your default search engine in zetsu mode
 about-private-browsing-search-banner-description = {
   PLATFORM() ->
      [windows] To select a different search engine go to <a data-l10n-name="link-options">Options</a>
@@ -57,7 +57,7 @@ about-private-browsing-promo-close-button =
 
 ## Strings used in a “pin promotion” message, which prompts users to pin a private window
 
-about-private-browsing-pin-promo-header = Private browsing freedom in one click
+about-private-browsing-pin-promo-header = Zetsu mode in one click
 about-private-browsing-pin-promo-link-text = { PLATFORM() ->
     [macos] Keep in Dock
    *[other] Pin to taskbar
@@ -74,5 +74,5 @@ about-private-browsing-cookie-banners-promo-body = We now automatically refuse m
 ## Strings for Felt Privacy v1 experiments in 119
 
 about-private-browsing-felt-privacy-v1-info-header = Leave no traces on this device
-about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name} deletes your cookies, history, and site data when you leave Zetsu Mode.
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name} deletes your cookies, history, and site data when you leave zetsu mode.
 about-private-browsing-felt-privacy-v1-info-link = Who might be able to see my activity?

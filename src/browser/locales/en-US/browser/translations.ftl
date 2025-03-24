@@ -6,12 +6,12 @@
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
-  .tooltiptext = Translate this page - Beta
+  .tooltiptext = Translate this page
 
 # Note that here "Beta" should not be translated, as it is a reflection of the
 # un-localized BETA icon that is in the panel.
 urlbar-translations-button-intro =
-  .tooltiptext = Try private translations in { -brand-shorter-name } - Beta
+  .tooltiptext = Try private translations in { -brand-shorter-name }
 
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.

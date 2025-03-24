@@ -8,8 +8,8 @@
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
 #
-# default - "Kyōsuke"
-# private - "Kyōsuke (Zetsu Mode)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -37,8 +37,8 @@ browser-main-window-titles =
 # opened has no title:
 #
 #
-# "default" - "Kyōsuke"
-# "private" - "Kyōsuke — (Zetsu Mode)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -101,7 +101,7 @@ urlbar-default-notification-anchor =
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Open location request panel
 urlbar-xr-notification-anchor =
-    .tooltiptext = Open virtual reality permission panel
+    .tooltiptext = Open VR permission panel
 urlbar-storage-access-anchor =
     .tooltiptext = Open browsing activity permission panel
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -143,6 +143,15 @@ urlbar-result-menu-remove-from-history =
 urlbar-result-menu-tip-get-help =
     .label = Get help
     .accesskey = h
+urlbar-result-menu-dismiss-suggestion =
+    .label = Dismiss this suggestion
+    .accesskey = D
+urlbar-result-menu-learn-more-about-firefox-suggest =
+    .label = Learn more about { -firefox-suggest-brand-name }
+    .accesskey = L
+urlbar-result-menu-manage-firefox-suggest =
+    .label = Manage { -firefox-suggest-brand-name }
+    .accesskey = M
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -168,9 +177,9 @@ urlbar-search-mode-actions = Actions
 urlbar-geolocation-blocked =
     .tooltiptext = You have blocked location information for this website.
 urlbar-xr-blocked =
-    .tooltiptext = You have blocked virtual reality device access for this website.
+    .tooltiptext = You have blocked VR access for this website.
 urlbar-web-notifications-blocked =
-    .tooltiptext = You have blocked notifications for this website.
+    .tooltiptext = You have blocked notifications from this website.
 urlbar-camera-blocked =
     .tooltiptext = You have blocked your camera for this website.
 urlbar-microphone-blocked =
@@ -203,10 +212,10 @@ urlbar-star-add-bookmark =
 ## Page Action Context Menu
 
 page-action-manage-extension2 =
-    .label = Manage extension…
+    .label = Manage addon…
     .accesskey = E
 page-action-remove-extension2 =
-    .label = Remove extension
+    .label = Remove addon
     .accesskey = v
 
 ## Auto-hide Context Menu
@@ -215,7 +224,7 @@ full-screen-autohide =
     .label = Hide Toolbars
     .accesskey = H
 full-screen-exit =
-    .label = Exit Full Screen Mode
+    .label = Exit Fullscreen
     .accesskey = F
 
 ## Search Engine selection buttons (one-offs)
@@ -234,7 +243,7 @@ search-one-offs-context-set-as-default =
     .label = Set as default search engine
     .accesskey = D
 search-one-offs-context-set-as-default-private =
-    .label = Set as default search engine for Zetsu Mode
+    .label = Set as default search engine for zetsu mode
     .accesskey = P
 
 # Search engine one-off buttons with an @alias shortcut/keyword.
@@ -278,7 +287,7 @@ search-one-offs-actions =
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
-quickactions-addons = View Add-ons
+quickactions-addons = View Addons
 quickactions-cmd-addons2 = add-ons
 
 # Opens the bookmarks library window
@@ -286,7 +295,7 @@ quickactions-bookmarks2 = Manage bookmarks
 quickactions-cmd-bookmarks = bookmarks
 
 # Opens a SUMO article explaining how to clear history
-quickactions-clearhistory = Clear history
+quickactions-clearhistory = Clear History
 quickactions-cmd-clearhistory = clear history
 
 # Opens about:downloads page
@@ -294,11 +303,11 @@ quickactions-downloads2 = View downloads
 quickactions-cmd-downloads = downloads
 
 # Opens about:addons page in the extensions section
-quickactions-extensions = Manage extensions
+quickactions-extensions = Manage addons
 quickactions-cmd-extensions = extensions
 
 # Opens the devtools web inspector
-quickactions-inspector2 = Open developer tools
+quickactions-inspector2 = Open Devtools
 quickactions-cmd-inspector = inspector, devtools
 
 # Opens about:logins
@@ -318,7 +327,7 @@ quickactions-savepdf = Save page as PDF
 quickactions-cmd-savepdf = pdf
 
 # Opens a new private browsing window
-quickactions-private2 = New window with Zetsu
+quickactions-private2 = Open zetsu mode
 quickactions-cmd-private = private browsing
 
 # Opens a SUMO article explaining how to refresh
@@ -346,7 +355,7 @@ quickactions-update = Update { -brand-short-name }
 quickactions-cmd-update = update
 
 # Opens the view-source UI with current pages source
-quickactions-viewsource2 = View Page Source
+quickactions-viewsource2 = View Source
 quickactions-cmd-viewsource = view source, source
 
 # Tooltip text for the help button shown in the result.
@@ -395,13 +404,13 @@ identity-site-information = Site information for { $host }
 #  $host (String): the hostname of the site that is being displayed.
 identity-header-security-with-host =
     .title = Connection security for { $host }
-identity-connection-not-secure = Connection not secure
-identity-connection-secure = Connection secure
-identity-connection-failure = Connection failure
-identity-connection-internal = This is a secure { -brand-short-name } page.
+identity-connection-not-secure = Insecure Connection
+identity-connection-secure = HTTPS Connection
+identity-connection-failure = Failed to connect
+identity-connection-internal = This page is built-in to { -brand-short-name } UwU
 identity-connection-file = This page is stored on your computer.
 identity-connection-associated = This page is loaded from another page.
-identity-extension-page = This page is loaded from an extension.
+identity-extension-page = This page is loaded from an addon.
 identity-active-blocked = { -brand-short-name } has blocked parts of this page that are not secure.
 identity-custom-root = Connection verified by a certificate issuer that is not recognized by Mozilla.
 identity-passive-loaded = Parts of this page are not secure (such as images).
@@ -527,8 +536,8 @@ popup-all-windows-shared = All visible windows on your screen will be shared.
 
 ## WebRTC window or screen share tab switch warning
 
-sharing-warning-window = You are sharing { -brand-short-name }. Other people can see when you switch to a new tab.
-sharing-warning-screen = You are sharing your entire screen. Other people can see when you switch to a new tab.
+sharing-warning-window = You’re sharing { -brand-short-name }. Other people can see when you switch to a new tab.
+sharing-warning-screen = You’re sharing your entire screen. Other people can see when you switch to a new tab.
 sharing-warning-proceed-to-tab =
   .label = Proceed to Tab
 sharing-warning-disable-for-session =
@@ -600,7 +609,7 @@ urlbar-switch-to-tab =
 
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
-  .value = Extension:
+  .value = Addon:
 
 urlbar-go-button =
   .tooltiptext = Go to the address in the Location Bar
@@ -663,18 +672,24 @@ urlbar-result-action-copy-to-clipboard = Copy
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
-urlbar-result-action-undefined-calculator-result = undefined
-# Shows the result of a formula expression being calculated, to a maximum of 9 significant
-# digits. The last = sign will be shown as part of the result (e.g. "= 2").
-# Variables
-#  $result (String): the string representation for a formula result
-urlbar-result-action-calculator-result-2 = = { NUMBER($result, maximumSignificantDigits: 9)}
+urlbar-result-action-undefined-calculator-result = NaN
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
 #  $result (String): the string representation for a result in scientific notation
 #  (e.g. "1.0e17").
 urlbar-result-action-calculator-result-scientific-notation = = { $result }
+# Shows the result of a formula expression being calculated, this is used for numbers >= 1.
+# The last = sign will be shown as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-3 = = { NUMBER($result, useGrouping: "false", maximumFractionDigits: 8)}
+# Shows the result of a formula expression being calculated, to a maximum of 9 significant
+# digits. This is used for numbers < 1.
+# The last = sign will be shown as part of the result (e.g. "= 0.333333333").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-decimal = = { NUMBER($result, maximumSignificantDigits: 9)}
 
 ## Strings used for buttons in the urlbar
 
@@ -793,14 +808,14 @@ reader-view-close-button =
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
 picture-in-picture-urlbar-button-open =
- .tooltiptext = Open Picture-in-Picture ({ $shortcut })
+ .tooltiptext = Open Miniplayer ({ $shortcut })
 
 picture-in-picture-urlbar-button-close =
- .tooltiptext = Close Picture-in-Picture ({ $shortcut })
+ .tooltiptext = Close Miniplayer ({ $shortcut })
 
-picture-in-picture-panel-header = Picture-in-Picture
-picture-in-picture-panel-headline = This website does not recommend Picture-in-Picture
-picture-in-picture-panel-body = Videos might not display as the developer intended while Picture-in-Picture is enabled.
+picture-in-picture-panel-header = Miniplayer
+picture-in-picture-panel-headline = This website does not recommend the miniplayer
+picture-in-picture-panel-body = Videos might not display as the developer intended while the miniplayer is enabled.
 picture-in-picture-enable-toggle =
   .label = Enable anyway
 
@@ -813,9 +828,9 @@ fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> is 
 fullscreen-warning-no-domain = This document is now full screen
 
 
-fullscreen-exit-button = Exit Full Screen (Esc)
+fullscreen-exit-button = Exit Fullscreen (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
-fullscreen-exit-mac-button = Exit Full Screen (esc)
+fullscreen-exit-mac-button = Exit Fullscreen (Esc)
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
@@ -952,8 +967,8 @@ toolbar-button-synced-tabs =
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
-  .label = New window with Zetsu
-  .tooltiptext = Open a new Zetsu window ({ $shortcut })
+  .label = Launch zetsu mode
+  .tooltiptext = Open a new window in zetsu mode ({ $shortcut })
 
 ## EME notification panel
 
@@ -1080,7 +1095,7 @@ private-browsing-indicator-label = Zetsu Mode
 
 # Tooltip for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-tooltip =
-    .tooltiptext = We'll try to keep your aura hidden.
+    .tooltiptext = Zetsu Mode
 
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
@@ -1095,43 +1110,43 @@ content-analysis-panel-text-styled = Your organization uses <b>{ $agentName }</b
 ## Unified extensions (toolbar) button
 
 unified-extensions-button =
-    .label = Extensions
-    .tooltiptext = Extensions
+    .label = Addons
+    .tooltiptext = Addons
 
 ## Unified extensions button when permission(s) are needed.
 ## Note that the new line is intentionally part of the tooltip.
 
 unified-extensions-button-permissions-needed =
-    .label = Extensions
+    .label = Addons
     .tooltiptext =
-        Extensions
+        Addons
         Permissions needed
 
 ## Unified extensions button when some extensions are quarantined.
 ## Note that the new line is intentionally part of the tooltip.
 
 unified-extensions-button-quarantined =
-    .label = Extensions
+    .label = Addons
     .tooltiptext =
-        Extensions
-        Some extensions are not allowed
+        Addons
+        Some addons are not allowed
 
 ## Unified extensions button when some extensions are disabled (e.g. through add-ons blocklist).
 ## Note that the new line is intentionally part of the tooltip.
 
 unified-extensions-button-blocklisted =
-    .label = Extensions
+    .label = Addons
     .tooltiptext =
-        Extensions
-        Some extensions are disabled
+        Addons
+        Some addons are disabled
 
 ## Private browsing reset button
 
 reset-pbm-toolbar-button =
     .label = Reset Zetsu Mode
-    .tooltiptext = Clear all data and make a new Zetsu session
+    .tooltiptext = Reset Zetsu Mode
 reset-pbm-panel-heading = Reset Zetsu Mode?
-reset-pbm-panel-description = All your cookies, tabs, and history open in Zetsu mode right now will be cleared.
+reset-pbm-panel-description = Close all Zetsu windows and all delete history, cookies, and all other site data.
 reset-pbm-panel-always-ask-checkbox =
      .label = Always ask me
      .accesskey = A
@@ -1139,9 +1154,9 @@ reset-pbm-panel-cancel-button =
     .label = Cancel
     .accesskey = C
 reset-pbm-panel-confirm-button =
-    .label = Leave Zetsu
+    .label = Delete session data
     .accesskey = D
-reset-pbm-panel-complete = Zetsu session cleared
+reset-pbm-panel-complete = Zetsu mode reset!
 
 ## Autorefresh blocker
 
@@ -1172,7 +1187,7 @@ popup-notification-xpinstall-prompt-block-url = See details
 
 # Note: Access key is set to P to match "Private" in the corresponding localized label.
 popup-notification-addon-privatebrowsing-checkbox =
-    .label = Allow in Zetsu Mode
+    .label = Run in Zetsu Mode
     .accesskey = P
 
 ## Pop-up warning
@@ -1195,7 +1210,7 @@ popup-warning-button =
     .label =
         { PLATFORM() ->
             [windows] Options
-           *[other] Preferences
+           *[other] Options
         }
     .accesskey =
         { PLATFORM() ->
@@ -1227,5 +1242,5 @@ file-picker-crashed-save-nowhere = The Windows file-dialog has crashed. No defau
 # `downloads-cmd-show-menuitem-2` and similar messages.
 
 file-picker-crashed-show-in-folder =
-    .label = Show in folder
+    .label = Show in Folder
     .accessKey = F

@@ -6,11 +6,11 @@
 ## Enhanced Tracking Protection.
 
 protections-popup-footer-protection-label-strict = Strict
-  .label = Strict
+  .label = Overpowered
 protections-popup-footer-protection-label-custom = Custom
-  .label = Custom
+  .label = Your Choice
 protections-popup-footer-protection-label-standard = Standard
-  .label = Standard
+  .label = Stable
 
 ##
 
@@ -62,7 +62,7 @@ protections-panel-content-blocking-fingerprinters-label = Fingerprinters
 
 protections-panel-blocking-label = Blocked
 protections-panel-not-blocking-label = Allowed
-protections-panel-not-found-label = None found
+protections-panel-not-found-label = None Detected
 
 ## Smartblock strings
 

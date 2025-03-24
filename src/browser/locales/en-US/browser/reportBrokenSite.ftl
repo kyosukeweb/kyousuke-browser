@@ -27,7 +27,7 @@ report-broken-site-panel-reason-adblockers =
 report-broken-site-panel-reason-other =
   .label = Something else
 
-report-broken-site-panel-description-label = Tell us about the problem
+report-broken-site-panel-description-label = Describe the problem
 
 report-broken-site-panel-description-optional-label = Describe the problem (optional)
 
@@ -47,7 +47,7 @@ report-broken-site-panel-report-sent-label = Your report has been sent
 report-broken-site-panel-report-sent-header =
   .label = Your report has been sent
   .title = Your report has been sent
-report-broken-site-panel-report-sent-text = Thank you for helping { -brand-product-name } make the web better for weebs everywhere!
+report-broken-site-panel-report-sent-text = Thank you for helping { -brand-product-name } make the web more open, accessible, and better for everyone.
 
 report-broken-site-panel-invalid-url-label = Please enter a valid URL
 report-broken-site-panel-missing-reason-label = Please choose a reason

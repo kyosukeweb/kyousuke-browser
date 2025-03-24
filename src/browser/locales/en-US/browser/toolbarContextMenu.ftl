@@ -3,95 +3,95 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 toolbar-context-menu-new-tab =
-    .label = New Tab
+    .label = New tab
     .accesskey = w
 toolbar-context-menu-reload-selected-tab =
-    .label = Reload Selected Tab
+    .label = Reload selected tab
     .accesskey = R
 toolbar-context-menu-reload-selected-tabs =
-    .label = Reload Selected Tabs
+    .label = Reload selected tabs
     .accesskey = R
 toolbar-context-menu-bookmark-selected-tab =
-    .label = Bookmark Selected Tab…
+    .label = Bookmark selected tab…
     .accesskey = T
 toolbar-context-menu-bookmark-selected-tabs =
-    .label = Bookmark Selected Tabs…
+    .label = Bookmark selected tabs…
     .accesskey = T
 toolbar-context-menu-select-all-tabs =
-    .label = Select All Tabs
+    .label = Select all tabs
     .accesskey = S
 # Variables
 #   $tabCount (number) - Number of tabs
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
-            [1] Reopen Closed Tab
-           *[other] Reopen Closed Tabs
+            [1] Reopen closed tab
+           *[other] Reopen closed tabs
         }
     .accesskey = o
 
 toolbar-context-turn-on-vertical-tabs =
-    .label = Turn on Vertical Tabs
+    .label = Turn on vertical tabs
 toolbar-context-turn-off-vertical-tabs =
-    .label = Turn off Vertical Tabs
+    .label = Turn off vertical tabs
 toolbar-context-customize-sidebar =
-    .label = Customize Sidebar
+    .label = Edit sidebar
 
 toolbar-context-menu-manage-extension =
-    .label = Manage Extension
-    .accesskey = E
+    .label = Manage addon
+    .accesskey = A
 toolbar-context-menu-remove-extension =
-    .label = Remove Extension
+    .label = Remove addon
     .accesskey = v
 
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
-    .label = Report Extension
+    .label = Report addon
     .accesskey = o
 
 # Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
 # ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
 # have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
-    .label = Pin to Overflow Menu
+    .label = Pin to overflow
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
-    .label = Hide Button When Empty
+    .label = Hide button when empty
     .accesskey = H
 toolbar-context-menu-always-open-downloads-panel =
-    .label = Show Panel When Download Begins
+    .label = Show panel when download begins
     .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
-    .label = Remove from Toolbar
+    .label = Remove from toolbar
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = Customize…
     .accesskey = C
 toolbar-context-menu-view-customize-toolbar-2 =
-    .label = Customize Toolbar…
+    .label = Customize toolbar…
     .accesskey = C
 # This is only ever shown when toolbar-context-menu-pin-to-overflow-menu
 # is hidden, so they can share access keys.
 toolbar-context-menu-pin-to-toolbar =
-    .label = Pin to Toolbar
+    .label = Pin to toolbar
     .accesskey = P
 
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
-    .label = Always Show
+    .label = Always show
     .accesskey = A
 toolbar-context-menu-bookmarks-toolbar-never-show-2 =
-    .label = Never Show
+    .label = Never show
     .accesskey = N
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
-    .label = Only Show on New Tab
+    .label = Only show on new tab
     .accesskey = O
 
 toolbar-context-menu-bookmarks-show-other-bookmarks =
-    .label = Show Other Bookmarks
+    .label = Show other bookmarks
     .accesskey = h
 
 toolbar-context-menu-menu-bar-cmd =
-    .toolbarname = Menu Bar
+    .toolbarname = Menubar
     .accesskey = M

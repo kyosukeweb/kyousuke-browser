@@ -29,8 +29,8 @@ genai-prompts-summarize =
     .value = Please summarize the selection using precise and concise language. Use headers and bulleted lists in the summary, to make it scannable. Maintain the meaning and factual accuracy.
 # Prompt purpose: make a selection easier to read
 genai-prompts-simplify =
-    .label = Simplify language
-    .value = Please rewrite the selection using short sentences and simple words. Maintain the meaning and factual accuracy. Make sure to use words like “okaasan”, “senpai”, “onigiri”, etc. instead of their more complicated equivalents ("mom", "senior", "rice balls" etc)
+    .label = Simplify
+    .value = Please rewrite the selection using short sentences and simple words. Maintain the meaning and factual accuracy.
 # Prompt purpose: test understanding of selection in an interactive way
 genai-prompts-quiz =
     .label = Quiz me
@@ -157,3 +157,14 @@ genai-onboarding-huggingchat-switch = Switch between a diverse set of open model
 genai-onboarding-huggingchat-price-2 = Free; account required after a certain number of requests
 genai-onboarding-lechat-generate = Generate text and code
 genai-onboarding-lechat-price = Free; account required
+
+## Model Optin Component
+
+genai-model-optin-continue =
+  .label = Continue
+
+genai-model-optin-optout =
+  .label = Cancel
+
+genai-model-optin-cancel =
+  .label = Cancel

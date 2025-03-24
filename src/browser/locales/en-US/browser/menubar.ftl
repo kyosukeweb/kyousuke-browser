@@ -60,7 +60,7 @@ menu-file-new-window =
     .label = New window
     .accesskey = N
 menu-file-new-private-window =
-    .label = New window in Zetsu mode
+    .label = New zetsu window
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
@@ -83,7 +83,7 @@ menu-file-close-window =
     .label = Close window
     .accesskey = d
 menu-file-save-page =
-    .label = Save page as…
+    .label = Save as…
     .accesskey = A
 menu-file-email-link =
     .label = Email link…
@@ -110,7 +110,7 @@ menu-edit =
     .label = Edit
     .accesskey = E
 menu-edit-find-in-page =
-    .label = Find in page…
+    .label = Find text…
     .accesskey = F
 menu-edit-find-again =
     .label = Find again
@@ -128,7 +128,7 @@ menu-view-toolbars-menu =
     .label = Toolbars
     .accesskey = T
 menu-view-customize-toolbar2 =
-    .label = Customize toolbar…
+    .label = Edit toolbar…
     .accesskey = C
 menu-view-sidebar =
     .label = Sidebar
@@ -171,24 +171,24 @@ menu-view-repair-text-encoding =
 ## use on macOS.
 
 menu-view-enter-full-screen =
-    .label = Enter full screen
+    .label = Enter fullscreen
     .accesskey = F
 menu-view-exit-full-screen =
-    .label = Exit full screen
+    .label = Exit fullscreen
     .accesskey = F
 menu-view-full-screen =
-    .label = Full screen
+    .label = Fullscreen
     .accesskey = F
 
 ## These menu items may use the same accesskey.
 
 # This should match reader-view-enter-button in browser.ftl
 menu-view-enter-readerview =
-    .label = Enter reader view
+    .label = Enter Reader View
     .accesskey = R
 # This should match reader-view-close-button in browser.ftl
 menu-view-close-readerview =
-    .label = Close reader view
+    .label = Close Reader View
     .accesskey = R
 
 ##
@@ -231,7 +231,7 @@ menu-bookmarks-menu =
 menu-bookmarks-manage =
     .label = Manage bookmarks
 menu-bookmark-tab =
-    .label = Bookmark this tab…
+    .label = Add this tab to bookmarks…
 menu-edit-bookmark =
     .label = Edit this bookmark…
 # "Search" is a verb, as in "Search in bookmarks"
@@ -264,13 +264,13 @@ menu-tools-downloads =
     .label = Downloads
     .accesskey = D
 menu-tools-addons-and-themes =
-    .label = Add-ons and themes
+    .label = Addons and themes
     .accesskey = A
 menu-tools-fxa-sign-in2 =
-    .label = Sign in
+    .label = Sign In
     .accesskey = g
 menu-tools-turn-on-sync2 =
-    .label = Turn on sync…
+    .label = Turn on Sync…
     .accesskey = n
 menu-tools-sync-now =
     .label = Sync now
@@ -325,18 +325,18 @@ menu-get-help =
     .label = Get help
     .accesskey = H
 menu-help-more-troubleshooting-info =
-    .label = More debug info
+    .label = More troubleshooting information
     .accesskey = T
 menu-help-report-site-issue =
-    .label = Report webite issue…
+    .label = Report site issue…
 menu-help-share-ideas =
     .label = Share ideas and feedback…
     .accesskey = S
 menu-help-enter-troubleshoot-mode2 =
-    .label = Debug mode…
+    .label = Troubleshoot mode…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
-    .label = Turn off debug mode
+    .label = Exit troubleshoot mode
     .accesskey = M
 menu-help-switch-device =
     .label = Switching to a new device
@@ -347,7 +347,7 @@ menu-help-report-deceptive-site =
     .label = Report deceptive site…
     .accesskey = D
 menu-help-not-deceptive =
-    .label = This isn’t a deceptive site…
+    .label = This Isn’t a deceptive site…
     .accesskey = D
 menu-report-broken-site =
   .label = Report broken site

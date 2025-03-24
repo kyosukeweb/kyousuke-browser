@@ -48,8 +48,8 @@ screenshots-unshootable-page-error-details = This isn’t a standard Web page, s
 
 screenshots-empty-selection-error-title = Your selection is too small
 
-screenshots-private-window-error-title = { -screenshots-brand-name } is disabled in Zetsu Mode
-screenshots-private-window-error-details = We're sorry, but it's hard to use Gyō while you're using Zetsu!!
+screenshots-private-window-error-title = { -screenshots-brand-name } is disabled in Private Browsing Mode
+screenshots-private-window-error-details = Sorry for the inconvenience. We are working on this feature for future releases.
 
 screenshots-generic-error-title = Whoa! { -screenshots-brand-name } went haywire.
 screenshots-generic-error-details = We’re not sure what just happened. Care to try again or take a shot of a different page?

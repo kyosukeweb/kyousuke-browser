@@ -9,15 +9,15 @@ forward = Forward
 reload = Reload
 home = Home
 fullscreen = Fullscreen
-touchbar-fullscreen-exit = Exit fullscreen
+touchbar-fullscreen-exit = Exit Fullscreen
 find = Find
 new-tab = New tab
 add-bookmark = Add bookmark
-reader-view = Reader view
+reader-view = Reader View
 # Meant to match the string displayed in an empty URL bar.
 open-location = Search or enter address
 share = Share
-close-window = Close window
+close-window = Close
 open-sidebar = Sidebars
 
 # This string describes shortcuts for search.
@@ -30,7 +30,7 @@ search-search-in = Search in:
 
 search-bookmarks = Bookmarks
 search-history = History
-search-opentabs = Open tabs
+search-opentabs = Open Tabs
 search-tags = Tags
 search-titles = Titles
 

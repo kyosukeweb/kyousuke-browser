@@ -8,16 +8,16 @@
 ## data for the current website, and allow them to control it.
 
 origin-controls-no-access =
-    .label = Extension Can’t Read and Change Data
+    .label = Addon Can’t Read and Change Data
 
 origin-controls-quarantined-status =
-    .label = Extension Not Allowed on Restricted Sites
+    .label = Addon Not Allowed on Restricted Sites
 
 origin-controls-quarantined-allow =
     .label = Allow on Restricted Sites
 
 origin-controls-options =
-    .label = Extension Can Read and Change Data:
+    .label = Addon Can Read and Change Data:
 
 origin-controls-option-all-domains =
     .label = On All Sites
@@ -45,9 +45,9 @@ origin-controls-state-when-clicked = Permission needed to read and change data
 
 origin-controls-state-hover-run-visit-only = Run for this visit only
 
-origin-controls-state-runnable-hover-open = Open extension
+origin-controls-state-runnable-hover-open = Open addon
 
-origin-controls-state-runnable-hover-run = Run extension
+origin-controls-state-runnable-hover-run = Run addon
 
 origin-controls-state-temporary-access = Can read and change data for this visit
 

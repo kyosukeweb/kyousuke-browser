@@ -23,16 +23,16 @@ synced-tabs-context-open =
     .label = Open
     .accesskey = O
 synced-tabs-context-open-in-tab =
-    .label = Open in new tab
+    .label = Open in New Tab
     .accesskey = w
 synced-tabs-context-open-in-container-tab =
-    .label = Open in new container tab
+    .label = Open in New Container Tab
     .accesskey = i
 synced-tabs-context-open-in-window =
-    .label = Open in new window
+    .label = Open in New Window
     .accesskey = N
 synced-tabs-context-open-in-private-window =
-    .label = Open in Zetsu Mode
+    .label = Open in New Private Window
     .accesskey = P
 
 ##

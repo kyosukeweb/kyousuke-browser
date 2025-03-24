@@ -20,9 +20,9 @@ graph-total-tracker-summary =
     *[other] <b>{ $count }</b> trackers blocked since { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
   }
 
-# Text displayed instead of the graph when in ~~Private Mode~~Zetsu mode
-graph-private-window = { -brand-short-name } will stop trackers in Zetsu mode, but we won't be able to keep track of it.
-# Weekly summary of the graph when the graph is empty in ~~Private Mode~~ Zetsu mode
+# Text displayed instead of the graph when in Private Mode
+graph-private-window = { -brand-short-name } continues to block trackers in zetsu mode, but does not keep a record of what was blocked.
+# Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Trackers { -brand-short-name } blocked this week
 
 protection-report-webpage-title = Protections Dashboard
@@ -35,10 +35,10 @@ protection-report-page-summary-default = { -brand-short-name } protects your pri
 protection-report-settings-link = Manage your privacy and security settings
 
 etp-card-title-always = Enhanced Tracking Protection: Always On
-etp-card-title-custom-not-blocking = Enhanced Tracking Protection: OFF
+etp-card-title-custom-not-blocking = Enhanced Tracking Protection: Off
 etp-card-content-description = { -brand-short-name } automatically stops companies from secretly following you around the web.
 protection-report-etp-card-content-custom-not-blocking = All protections are currently turned off. Choose which trackers to block by managing your { -brand-short-name } protections settings.
-protection-report-manage-protections = Edit settings
+protection-report-manage-protections = Manage settings
 
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
@@ -48,10 +48,10 @@ graph-today = Today
 graph-legend-description = A graph containing the total number of each type of tracker blocked this week.
 
 social-tab-title = Social Media Trackers
-social-tab-contant = Social media apps try to track you with invisible GIFs on other websites. This allows social media companies to learn more about you beyond what you share on your social media profiles. <a data-l10n-name="learn-more-link">Learn more</a>
+social-tab-contant = Social networks place trackers on other websites to follow what you do, see, and watch online. This allows social media companies to learn more about you beyond what you share on your social media profiles. <a data-l10n-name="learn-more-link">Learn more</a>
 
 cookie-tab-title = Cross-Site Tracking Cookies
-cookie-tab-content = These cookies follow you from site to site to see what you do online. They are set by third parties such as advertisers and analytics companies. Blocking cross-site tracking cookies reduces the number of ads that follow you around. <a data-l10n-name="learn-more-link">Learn more</a>
+cookie-tab-content = These cookies follow you from site to site to gather data about what you do online. They are set by third parties such as advertisers and analytics companies. Blocking cross-site tracking cookies reduces the number of ads that follow you around. <a data-l10n-name="learn-more-link">Learn more</a>
 
 tracker-tab-title = Tracking Content
 tracker-tab-description = Websites may load external ads, videos, and other content with tracking code. Blocking tracking content can help sites load faster, but some buttons, forms, and login fields might not work. <a data-l10n-name="learn-more-link">Learn more</a>

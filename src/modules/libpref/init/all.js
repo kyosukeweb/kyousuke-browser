@@ -60,7 +60,7 @@ pref("security.remote_settings.intermediates.enabled", true);
 pref("security.remote_settings.intermediates.downloads_per_poll", 5000);
 pref("security.remote_settings.intermediates.parallel_downloads", 8);
 
-#if defined(EARLY_BETA_OR_EARLIER) && !defined(MOZ_WIDGET_ANDROID)
+#if !defined(MOZ_WIDGET_ANDROID)
   pref("security.remote_settings.crlite_filters.enabled", true);
 #else
   pref("security.remote_settings.crlite_filters.enabled", false);
@@ -80,9 +80,6 @@ pref("general.config.obscure_value", 13); // for MCD .cfg files
 #ifndef MOZ_BUILD_APP_IS_BROWSER
 pref("general.warnOnAboutConfig", true);
 #endif
-
-// Top websites
-pref("browser.newtabpage.activity-stream.default.sites", "https://www.youtube.com/,https://www.hulu.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://myanimelist.net/");
 
 // Whether middle button click with a modifier key starts to autoscroll or
 // does nothing.
@@ -112,6 +109,12 @@ pref("browser.cache.frecency_half_life_hours", 6);
 
 // Don't show "Open with" option on download dialog if true.
 pref("browser.download.forbid_open_with", false);
+
+// Enable honorifics
+pref("dom.honorifics.enabled", true);
+
+// Enable the web share API.
+pref("dom.webshare.enabled", true);
 
 // Enable indexedDB logging.
 pref("dom.indexedDB.logging.enabled", true);
@@ -213,7 +216,7 @@ pref("media.gmp.storage.version.expected", 1);
 #ifdef NIGHTLY_BUILD
   pref("media.decoder-doctor.notifications-allowed", "MediaWMFNeeded,MediaWidevineNoWMF,MediaCannotInitializePulseAudio,MediaCannotPlayNoDecoders,MediaUnsupportedLibavcodec,MediaPlatformDecoderNotFound,MediaDecodeError");
 #else
-  pref("media.decoder-doctor.notifications-allowed", "MediaWMFNeeded,MediaWidevineNoWMF,MediaCannotInitializePulseAudio,MediaCannotPlayNoDecoders,MediaUnsupportedLibavcodec,MediaPlatformDecoderNotFound");
+  pref("media.decoder-doctor.notifications-allowed", "MediaWMFNeeded,MediaWidevineNoWMF,MediaCannotInitializePulseAudio,MediaCannotPlayNoDecoders,MediaUnsupportedLibavcodec,MediaPlatformDecoderNotFound,MediaDecodeError");
 #endif
 pref("media.decoder-doctor.decode-errors-allowed", "");
 pref("media.decoder-doctor.decode-warnings-allowed", "");
@@ -266,11 +269,7 @@ pref("media.videocontrols.keyboard-tab-to-all-controls", true);
   pref("media.navigator.video.default_height",0); // adaptive default
   pref("media.navigator.video.max_fs", 12288); // Enough for 2048x1536
   pref("media.navigator.video.max_fr", 60);
-  #ifdef NIGHTLY_BUILD
-    pref("media.navigator.video.disable_h264_baseline", false);
-  #else
-    pref("media.navigator.video.disable_h264_baseline", true);
-  #endif
+  pref("media.navigator.video.disable_h264_baseline", false);
   pref("media.navigator.video.h264.level", 31); // 0x42E01f - level 3.1
   pref("media.navigator.video.h264.max_br", 0);
   pref("media.navigator.video.h264.max_mbps", 0);
@@ -326,12 +325,13 @@ pref("media.videocontrols.keyboard-tab-to-all-controls", true);
   #ifdef NIGHTLY_BUILD
     pref("media.peerconnection.description.legacy.enabled", false);
   #else
-    pref("media.peerconnection.description.legacy.enabled", true);
+    pref("media.peerconnection.description.legacy.enabled", false);
   #endif
 
   // 770 = DTLS 1.0, 771 = DTLS 1.2, 772 = DTLS 1.3
+  // TODO(bug 1952950) Re-enable this once 1952706 lands everywhere.
   pref("media.peerconnection.dtls.version.min", 771);
-  pref("media.peerconnection.dtls.version.max", 772);
+  pref("media.peerconnection.dtls.version.max", 771);
 
 #if defined(XP_MACOSX)
   pref("media.getusermedia.audio.processing.platform.enabled", true);
@@ -356,13 +356,13 @@ pref("media.videocontrols.keyboard-tab-to-all-controls", true);
   pref("media.getusermedia.screensharing.enabled", true);
 #endif
 
-pref("media.getusermedia.audio.capture.enabled", false);
+pref("media.getusermedia.audio.capture.enabled", true);
 
 // WebVTT debug logging.
 pref("media.webvtt.debug.logging", false);
 
 // Whether to allow recording of AudioNodes with MediaRecorder
-pref("media.recorder.audio_node.enabled", false);
+pref("media.recorder.audio_node.enabled", true);
 
 // Whether MediaRecorder's video encoder should allow dropping frames in order
 // to keep up under load. Useful for tests but beware of memory consumption!
@@ -550,6 +550,9 @@ pref("toolkit.scrollbox.clickToScroll.scrollDelay", 150);
 pref("toolkit.shopping.ohttpConfigURL", "https://prod.ohttp-gateway.prod.webservices.mozgcp.net/ohttp-configs");
 pref("toolkit.shopping.ohttpRelayURL", "https://mozilla-ohttp.fastly-edge.com/");
 pref("toolkit.shopping.environment", "prod");
+
+// Determines whether Review Checker is enabled for de and fr domains
+pref("toolkit.shopping.experience2023.defr", false);
 
 // Controls logging for Sqlite.sys.mjs.
 pref("toolkit.sqlitejsm.loglevel", "Error");
@@ -803,8 +806,6 @@ pref("dom.allow_scripts_to_close_windows",          false);
 pref("dom.mutation_events.forceEnable", "");
 
 pref("dom.popup_allowed_events", "change click dblclick auxclick mousedown mouseup pointerdown pointerup notificationclick reset submit touchend contextmenu");
-
-pref("dom.serviceWorkers.disable_open_click_delay", 1000);
 
 pref("dom.storage.shadow_writes", false);
 pref("dom.storage.snapshot_prefill", 16384);
@@ -1480,9 +1481,6 @@ pref("network.proxy.autoconfig_retry_interval_min", 5);    // 5 seconds
 pref("network.proxy.autoconfig_retry_interval_max", 300);  // 5 minutes
 pref("network.proxy.enable_wpad_over_dhcp", true);
 
-// Use the HSTS preload list by default
-pref("network.stricttransportsecurity.preloadlist", true);
-
 pref("converter.html2txt.structs",          true); // Output structured phrases (strong, em, code, sub, sup, b, i, u)
 pref("converter.html2txt.header_strategy",  1); // 0 = no indention; 1 = indention, increased with header level; 2 = numbering and slight indention
 
@@ -1936,7 +1934,7 @@ pref("browser.tabs.remote.separatePrivilegedContentProcess", false);
 
 // The domains we will isolate into the Mozilla Content Process. Comma-separated
 // full domains: any subdomains of the domains listed will also be allowed.
-pref("browser.tabs.remote.separatedMozillaDomains", "addons.mozilla.org,accounts.firefox.com,kyousuke.vercel.app");
+pref("browser.tabs.remote.separatedMozillaDomains", "addons.mozilla.org,accounts.firefox.com");
 
 // Default font types and sizes by locale
 pref("font.default.ar", "sans-serif");
@@ -3151,7 +3149,7 @@ pref("extensions.webextensions.ExtensionStorageIDB.enabled", true);
 // Whether to allow the inline options browser in HTML about:addons page.
 pref("extensions.htmlaboutaddons.inline-options.enabled", true);
 // Show recommendations on the extension and theme list views.
-pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+pref("extensions.htmlaboutaddons.recommendations.enabled", true);
 
 // The URL for the privacy policy related to recommended add-ons.
 pref("extensions.recommendations.privacyPolicyUrl", "");
@@ -3181,9 +3179,6 @@ pref("network.buffer.cache.size",  32768);
 
 // Web Notification
 pref("dom.webnotifications.requireinteraction.count", 3);
-
-// Show favicons in web notifications.
-pref("alerts.showFavicons", true);
 
 // DOM full-screen API.
 #ifdef XP_MACOSX
@@ -3441,9 +3436,12 @@ pref("browser.search.log", false);
 pref("browser.search.update", true);
 pref("browser.search.suggest.enabled", true);
 pref("browser.search.suggest.enabled.private", false);
-pref("browser.search.separatePrivateDefault", false);
-pref("browser.search.separatePrivateDefault.ui.enabled", true);
+pref("browser.search.separatePrivateDefault", true);
+pref("browser.search.separatePrivateDefault.ui.enabled", false);
 pref("browser.search.removeEngineInfobar.enabled", true);
+// Temporary preference to allow switching between the Rust based search engine
+// selector and the JavaScript one (bug 1914143).
+pref("browser.search.rustSelector.featureGate", false);
 
 // GMPInstallManager prefs
 
@@ -3586,8 +3584,6 @@ pref("toolkit.pageThumbs.screenSizeDivisor", 7);
 pref("toolkit.pageThumbs.minWidth", 0);
 pref("toolkit.pageThumbs.minHeight", 0);
 
-pref("webextensions.tests", false);
-
 // 16MB default non-parseable upload limit for requestBody.raw.bytes
 pref("webextensions.webRequest.requestBodyMaxRawBytes", 16777216);
 
@@ -3661,7 +3657,7 @@ pref("browser.translations.chaos.timeoutMS", 0);
 
 // Enable the experimental machine learning inference engine.
 #ifdef NIGHTLY_BUILD
-  pref("browser.ml.enable", true);
+  pref("browser.ml.enable", false);
 #else
   pref("browser.ml.enable", false);
 #endif
@@ -3677,17 +3673,10 @@ pref("browser.ml.modelCacheMaxSize", 4);
 pref("browser.ml.modelCacheTimeout", 120000);
 // Minimal Physical RAM required in GiB
 pref("browser.ml.minimumPhysicalMemory", 4);
-// Default memory usage for a model in GiB
-pref("browser.ml.defaultModelMemoryUsage", 1);
 // Check for memory before running
-pref("browser.ml.checkForMemory", false);
-// Maximum memory pressure (%)
-pref("browser.ml.maximumMemoryPressure", 80);
-// Queue wait timeout in seconds
-pref("browser.ml.queueWaitTimeout", 60);
-// Queue wait checks interval in seconds
-pref("browser.ml.queueWaitInterval", 1);
-
+pref("browser.ml.checkForMemory", true);
+// Allowed overrides for various ml features
+pref("browser.ml.overridePipelineOptions", "{}");
 
 // When a user cancels this number of authentication dialogs coming from
 // a single web page in a row, all following authentication dialogs will
@@ -3741,7 +3730,7 @@ pref("toolkit.legacyUserProfileCustomizations.stylesheets", false);
   pref("datareporting.policy.currentPolicyVersion", 2);
   pref("datareporting.policy.minimumPolicyVersion", 1);
   pref("datareporting.policy.minimumPolicyVersion.channel-beta", 2);
-  pref("datareporting.policy.firstRunURL", "https://kyousuke.vercel.app/privacy/");
+  pref("datareporting.policy.firstRunURL", "https://www.mozilla.org/privacy/firefox/");
 #endif
 
 #ifdef MOZ_SERVICES_HEALTHREPORT
@@ -3750,8 +3739,8 @@ pref("toolkit.legacyUserProfileCustomizations.stylesheets", false);
 
     // Health Report is enabled by default on all channels.
     // Do note that the toggle on Fenix and Focus does NOT reflect to this pref.
-    pref("datareporting.healthreport.uploadEnabled", false);
-    pref("datareporting.usage.uploadEnabled", false);
+    pref("datareporting.healthreport.uploadEnabled", true);
+    pref("datareporting.usage.uploadEnabled", true);
   #endif
 #endif
 
@@ -3761,7 +3750,7 @@ pref("services.common.log.logger.tokenserverclient", "Debug");
 
 #ifdef MOZ_SERVICES_SYNC
   pref("services.sync.lastversion", "firstrun");
-  pref("services.sync.sendVersionInfo", true);
+  pref("services.sync.sendVersionInfo", false);
 
   pref("services.sync.scheduler.idleInterval", 3600);  // 1 hour
   pref("services.sync.scheduler.activeInterval", 600);   // 10 minutes
@@ -3775,14 +3764,14 @@ pref("services.common.log.logger.tokenserverclient", "Debug");
   // it starts as disabled until the user has explicitly opted in.
   // The sync "create account" process typically *will* offer these engines, so
   // they may be flipped to enabled at that time.
-  pref("services.sync.engine.addons", true);
+  pref("services.sync.engine.addons", false);
   pref("services.sync.engine.addresses", false);
   pref("services.sync.engine.bookmarks", true);
   pref("services.sync.engine.creditcards", false);
   pref("services.sync.engine.history", true);
-  pref("services.sync.engine.passwords", true);
-  pref("services.sync.engine.prefs", true);
-  pref("services.sync.engine.tabs", true);
+  pref("services.sync.engine.passwords", false);
+  pref("services.sync.engine.prefs", false);
+  pref("services.sync.engine.tabs", false);
   pref("services.sync.engine.tabs.filteredSchemes", "about|resource|chrome|file|blob|moz-extension|data");
 
   // The addresses and CC engines might not actually be available at all.
@@ -3795,7 +3784,7 @@ pref("services.common.log.logger.tokenserverclient", "Debug");
   pref("services.sync.addons.ignoreUserEnabledChanges", false);
 
   // Comma-delimited list of hostnames to trust for add-on install.
-  pref("services.sync.addons.trustedSourceHostnames", "addons.mozilla.org,kyousuke.vercel.app,themirrazz.vercel.app,miteiru.vercel.app");
+  pref("services.sync.addons.trustedSourceHostnames", "addons.mozilla.org");
 
   pref("services.sync.log.appender.console", "Fatal");
   pref("services.sync.log.appender.dump", "Error");
@@ -3936,8 +3925,8 @@ pref("devtools.errorconsole.deprecation_warnings", true);
   pref("devtools.debugger.remote-enabled", false, sticky);
 #else
   // In local builds, enable the browser toolbox by default.
-  pref("devtools.chrome.enabled", false, sticky);
-  pref("devtools.debugger.remote-enabled", false, sticky);
+  pref("devtools.chrome.enabled", true, sticky);
+  pref("devtools.debugger.remote-enabled", true, sticky);
 #endif
 
 // Enable service worker debugging on all channels.
@@ -4038,6 +4027,13 @@ pref("extensions.formautofill.loglevel", "Warn");
 // Temporary prefs that we will be removed if the telemetry data (added in Fx123) does not show any problems with the new heuristics.
 pref("extensions.formautofill.heuristics.captureOnFormRemoval", true);
 pref("extensions.formautofill.heuristics.captureOnPageNavigation", true);
+
+#ifdef NIGHTLY_BUILD
+pref("extensions.formautofill.heuristics.detectDynamicFormChanges", true);
+pref("extensions.formautofill.heuristics.fillOnDynamicFormChanges", true);
+// Note: The greater the timeout value the higher the risk of automatically filling fields after a non-script/user action.
+pref("extensions.formautofill.heuristics.fillOnDynamicFormChanges.timeout", 1000);
+#endif
 
 pref("extensions.formautofill.heuristics.autofillSameOriginWithTop", true);
 

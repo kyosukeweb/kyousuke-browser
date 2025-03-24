@@ -75,19 +75,19 @@ sidebar-context-menu-remove-extension =
 sidebar-context-menu-report-extension =
   .label = Report extension
 sidebar-context-menu-open-in-window =
-  .label = Open in new window
+  .label = Open in New Window
 sidebar-context-menu-open-in-private-window =
-  .label = Open in Zetsu Mode
+  .label = Open in New Private Window
 sidebar-context-menu-bookmark-tab =
-  .label = Add bookmark…
+  .label = Bookmark Tab…
 sidebar-context-menu-copy-link =
-  .label = Copy link
+  .label = Copy Link
 sidebar-context-menu-hide-sidebar =
-  .label = Hide sidebar
+  .label = Hide Sidebar
 sidebar-context-menu-enable-vertical-tabs =
-  .label = Turn on vertical tabs
+  .label = Turn on Vertical Tabs
 sidebar-context-menu-customize-sidebar =
-  .label = Edit sidebar
+  .label = Customize Sidebar
 # Variables:
 #   $deviceName (String) - The name of the device the user is closing a tab for
 sidebar-context-menu-close-remote-tab =

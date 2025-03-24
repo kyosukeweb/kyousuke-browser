@@ -18,10 +18,10 @@ cfr-doorhanger-extension-cancel-button = Not Now
 cfr-doorhanger-extension-ok-button = Add Now
   .accesskey = A
 
-cfr-doorhanger-extension-manage-settings-button = Manage recommendation settings
+cfr-doorhanger-extension-manage-settings-button = Manage Recommendation Settings
   .accesskey = M
 
-cfr-doorhanger-extension-never-show-recommendation = Don’t show me this recommendation
+cfr-doorhanger-extension-never-show-recommendation = Don’t Show Me This Recommendation
   .accesskey = S
 
 cfr-doorhanger-extension-learn-more-link = Learn more
@@ -133,10 +133,10 @@ spotlight-public-wifi-vpn-link = Not Now
 
 ## Emotive Continuous Onboarding
 
-spotlight-better-internet-header = A weebier internet starts with you
-spotlight-better-internet-body = When you use { -brand-short-name}, you’re voting for an internet that’s better for all weebs.
+spotlight-better-internet-header = A better internet starts with you
+spotlight-better-internet-body = When you use { -brand-short-name}, you’re voting for an open and accessible internet that’s better for everyone.
 spotlight-peace-mind-header = We’ve got you covered
-spotlight-peace-mind-body = Every month, { -brand-short-name } does something some amount of times. We'd tell you exactly what it does, but we don't really have a enough analytics data to tell you (probably because any telemetry left is being sent to Mozilla and not us)
+spotlight-peace-mind-body = Every month, { -brand-short-name } blocks an average of over 3,000 trackers per user. Because nothing, especially privacy nuisances like trackers, should stand between you and the good internet.
 spotlight-pin-primary-button = { PLATFORM() ->
     [macos] Keep in Dock
    *[other] Pin to taskbar
@@ -314,9 +314,9 @@ multi-cta-fox-doodle-pin-checkbox  = { PLATFORM() ->
 multi-cta-fox-doodle-start-browsing-primary-button-label = Start browsing
 multi-cta-fox-doodle-main-browser-primary-button-label = Make { -brand-short-name } my main browser
 
-multi-cta-fox-doodle-quick-reminder-subtitle = Here’s a quick reminder that you can keep your favorite anime-focused browser just one click away.
+multi-cta-fox-doodle-quick-reminder-subtitle = Here’s a quick reminder that you can keep your favorite privacy-focused browser just one click away.
 multi-cta-fox-doodle-privacy-focused-subtitle  = { PLATFORM() ->
-    [macos] Keep your favorite weeb browser just one click away. Set { -brand-short-name } as your default browser for opening links and keep it in your Dock.
-   *[other] Keep your favorite weebd browser just one click away. Set { -brand-short-name } as your default browser for opening links and pin it to your taskbar.
+    [macos] Keep your favorite privacy-focused browser just one click away. Set { -brand-short-name } as your default browser for opening links and keep it in your Dock.
+   *[other] Keep your favorite privacy-focused browser just one click away. Set { -brand-short-name } as your default browser for opening links and pin it to your taskbar.
 }
-multi-cta-fox-doodle-msix-privacy-focused-subtitle = Keep your favorite weeb browser just one click away. Set { -brand-short-name } as your default browser for opening links and pin it to your taskbar and Start menu.
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Keep your favorite privacy-focused browser just one click away. Set { -brand-short-name } as your default browser for opening links and pin it to your taskbar and Start menu.

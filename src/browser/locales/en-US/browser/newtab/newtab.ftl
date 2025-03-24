@@ -78,7 +78,7 @@ newtab-confirm-delete-history-p2 = This action cannot be undone.
 
 ## Top Sites - Sponsored label
 
-newtab-topsite-sponsored = Sponsored
+newtab-topsite-sponsored = Ad
 
 ## Context Menu - Action Tooltips.
 
@@ -107,7 +107,7 @@ newtab-menu-topsites-placeholder-tooltip =
 
 newtab-menu-edit-topsites = Edit
 newtab-menu-open-new-window = Open in a new window
-newtab-menu-open-new-private-window = Open in new window with Zetsu
+newtab-menu-open-new-private-window = Open in Zetsu Mode
 newtab-menu-dismiss = Dismiss
 newtab-menu-pin = Pin
 newtab-menu-unpin = Unpin
@@ -124,6 +124,11 @@ newtab-menu-section-block = Block
 # e.g. Following the travel section of stories.
 newtab-menu-section-unfollow = Unfollow topic
 
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = Manage sponsored content
+newtab-menu-our-sponsors-and-your-privacy = Our sponsors and your privacy
+
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Done
@@ -139,16 +144,16 @@ newtab-privacy-modal-link = Learn how privacy works on the new tab
 ##
 
 # Bookmark is a noun in this case, "Remove bookmark".
-newtab-menu-remove-bookmark = Remove bookmark
+newtab-menu-remove-bookmark = Remove Bookmark
 # Bookmark is a verb here.
-newtab-menu-bookmark = Add bookmark
+newtab-menu-bookmark = Bookmark
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
-newtab-menu-copy-download-link = Copy download link
-newtab-menu-go-to-download-page = Go to download page
-newtab-menu-remove-download = Remove from history
+newtab-menu-copy-download-link = Copy Download Link
+newtab-menu-go-to-download-page = Go to Download Page
+newtab-menu-remove-download = Remove from History
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
@@ -157,17 +162,17 @@ newtab-menu-remove-download = Remove from history
 newtab-menu-show-file =
     { PLATFORM() ->
         [macos] Show in Finder
-       *[other] Open containing folder
+       *[other] Open Containing Folder
     }
-newtab-menu-open-file = Open file
+newtab-menu-open-file = Open File
 
 ## Card Labels: These labels are associated to pages to give
 ## context on how the element is related to the user, e.g. type indicates that
 ## the page is bookmarked, or is currently open on another device.
 
 newtab-label-visited = Visited
-newtab-label-bookmarked = Bookmark added
-newtab-label-removed-bookmark = Bookmark removed
+newtab-label-bookmarked = Added bookmark
+newtab-label-removed-bookmark = Removed bookmark
 newtab-label-recommended = Trending
 newtab-label-saved = Saved to { -pocket-brand-name }
 newtab-label-download = Downloaded
@@ -200,20 +205,20 @@ newtab-section-menu-add-topsite = Add top site
 newtab-section-menu-add-search-engine = Add search engine
 newtab-section-menu-move-up = Move up
 newtab-section-menu-move-down = Move down
-newtab-section-menu-privacy-notice = Privacy notice
+newtab-section-menu-privacy-notice = Privacy Notice
 
 ## Section aria-labels
 
 newtab-section-collapse-section-label =
-    .aria-label = Collapse Section
+    .aria-label = Collapse section
 newtab-section-expand-section-label =
-    .aria-label = Expand Section
+    .aria-label = Expand section
 
 ## Section Headers.
 
 newtab-section-header-topsites = Top Sites
 newtab-section-header-recent-activity = Recent activity
-newtab-section-header-stories = Thought-provoking stories
+newtab-section-header-stories = Breaking News!!
 # "picks" refers to recommended articles
 newtab-section-header-todays-picks = Today’s picks for you
 
@@ -367,7 +372,7 @@ newtab-wallpaper-starry-canyon = Blue starry night
 newtab-wallpaper-suspension-bridge = Grey full-suspension bridge photography during daytime
 newtab-wallpaper-sand-dunes = White sand dunes
 newtab-wallpaper-palm-trees = Silhouette of coconut palm trees during golden hour
-newtab-wallpaper-forest-trees = Trees covered with fog
+newtab-wallpaper-blue-flowers = Closeup photography of blue-petaled flowers in bloom
 
 ## Celestial
 
@@ -453,12 +458,6 @@ newtab-topic-label-sports = Sports
 newtab-topic-label-tech = Tech
 newtab-topic-label-travel = Travel
 newtab-topic-label-home = Home & Garden
-
-# Weeby media
-newtab-topic-label-anime = Anime
-newtab-topic-label-manga = Manga
-newtab-topic-label-vocaloid = Vocaloid
-newtab-topic-label-weeb-ln = Light Novels
 
 ## Topic Selection Modal
 

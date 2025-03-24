@@ -303,7 +303,7 @@ onboarding-device-migration-primary-button-label = Sign in
 ## Add-ons Picker screen
 
 amo-picker-title = Customize your { -brand-short-name }
-amo-picker-subtitle = Add-ons are like apps for your browser, and they let you protect passwords, download videos, find deals, block annoying ads, change how your browser looks, and much more.
+amo-picker-subtitle = Extensions are like apps for your browser, and they let you protect passwords, download videos, find deals, block annoying ads, change how your browser looks, and much more.
 amo-picker-install-button-label = Add to { -brand-short-name }
 amo-picker-install-complete-label = Installed
 amo-picker-collection-link = Explore more add-ons
@@ -311,16 +311,16 @@ amo-picker-collection-link = Explore more add-ons
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
-onboarding-easy-setup-security-and-privacy-title = Hey there, onii-san!
-onboarding-easy-setup-security-and-privacy-subtitle = Welcome to { -brand-short-name }! Let's start seting up your new browser together. Ganbatteru yo!!
+onboarding-easy-setup-security-and-privacy-title = We love keeping you safe
+onboarding-easy-setup-security-and-privacy-subtitle = Our non-profit backed browser helps stop companies from secretly following you around the web.
 
 # Mobile download screen
 onboarding-mobile-download-security-and-privacy-title = Stay encrypted when you hop between devices
 onboarding-mobile-download-security-and-privacy-subtitle = When you’re synced up, { -brand-short-name } encrypts your passwords, bookmarks, and more. Plus you can grab tabs from your other devices.
 
 # Gratitude screen
-onboarding-gratitude-security-and-privacy-title = Arigatō gozaimasu!
-onboarding-gratitude-security-and-privacy-subtitle = Thank you for using { -brand-short-name }! We hope to give you the best experience a weeb could ever have!
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } has your back
+onboarding-gratitude-security-and-privacy-subtitle = Thank you for using { -brand-short-name }, backed by the Mozilla Foundation. With your support, we’re working to make the internet safer and more accessible for everyone.
 
 # Sign up or Sign in screen
 onboarding-sign-up-title = Sync your data across devices
@@ -438,9 +438,11 @@ onboarding-checklist-sign-up = Sign up or sign in to your account
 
 tab-groups-onboarding-feature-callout-title = Try tab groups for less clutter, more focus
 tab-groups-onboarding-feature-callout-subtitle = Get organized by dragging one tab on top of another to create your first group.
-tab-groups-onboarding-create-group-title = Find your open groups on the tab bar or by searching for them in the address bar.
-tab-groups-onboarding-saved-groups-title = If you close a tab group, you can reopen it here anytime.
-tab-groups-onboarding-saved-groups-no-alltabs-button-title = Find your open or closed tab groups anytime by searching in the address bar.
+tab-groups-onboarding-create-group-title-2 = Find your tab groups here anytime.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Find your groups by searching for them in the address bar.
+tab-groups-onboarding-saved-groups-title-2 = When you close a tab group, you can reopen it here anytime.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Find your closed groups by searching for them in the address bar.
+tab-groups-onboarding-session-restore-title = Reopen your tab groups here anytime.
 tab-groups-onboarding-dismiss = OK
 
 ## Multi Profiles feature onboarding messages

@@ -6,7 +6,7 @@ tabbrowser-empty-tab-title = New Tab
 tabbrowser-empty-private-tab-title = New Zetsu Tab
 
 tabbrowser-menuitem-close-tab =
-    .label = Close Tab
+    .label = Close tab
 tabbrowser-menuitem-close =
     .label = Close
 
@@ -121,7 +121,7 @@ tabbrowser-ask-close-tabs-with-key-checkbox = Ask before quitting with { $quitKe
 tabbrowser-confirm-close-warn-shortcut-title = Quit { -brand-short-name } or close current tab?
 tabbrowser-confirm-close-windows-warn-shortcut-button =
     { PLATFORM() ->
-        [windows] Exit { -brand-short-name }
+        [windows] Quit { -brand-short-name }
        *[other] Quit { -brand-short-name }
     }
 tabbrowser-confirm-close-tab-only-button = Close current tab
@@ -163,18 +163,18 @@ tabbrowser-customizemode-tab-title = Customize { -brand-short-name }
 ## Context menu buttons, of which only one will be visible at a time
 
 tabbrowser-context-mute-tab =
-    .label = Mute Tab
+    .label = Mute tab
     .accesskey = M
 tabbrowser-context-unmute-tab =
-    .label = Unmute Tab
+    .label = Unmute tab
     .accesskey = m
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
-    .label = Mute Tabs
+    .label = Mute tabs
     .accesskey = M
 # The accesskey should match the accesskey for tabbrowser-context-unmute-tab
 tabbrowser-context-unmute-selected-tabs =
-    .label = Unmute Tabs
+    .label = Unmute tabs
     .accesskey = m
 
 # This string is used as an additional tooltip and accessibility description for tabs playing audio
@@ -187,7 +187,7 @@ tabbrowser-tab-audio-playing-description = Playing audio
 tabbrowser-ctrl-tab-list-all-tabs =
     .label =
         { $tabCount ->
-           *[other] List All { $tabCount } Tabs
+           *[other] List all { $tabCount } tabs
         }
 
 ## Tab manager menu buttons
@@ -211,8 +211,6 @@ tabbrowser-manager-current-window-tab-group =
   .tooltiptext = { $tabGroupName } — Current window
 
 ## Tab Groups
-
-tab-group-menu-header = Tab groups
 
 tab-group-name-default = Unnamed Group
 tab-group-editor-title-create = Create tab group

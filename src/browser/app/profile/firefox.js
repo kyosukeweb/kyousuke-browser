@@ -19,10 +19,19 @@
   #endif
 #endif
 
+// Payments API, just to get a higher HTML5Test score
+pref("dom.payments.request.enabled", true);
+
+// Vibrations
+pref("dom.vibrator.enabled", true);
+
+// Now you can play your 3D VR isekai games
+pref("dom.vr.webxr.enabled", true);
+
 pref("browser.hiddenWindowChromeURL", "chrome://browser/content/hiddenWindowMac.xhtml");
 
 // Set add-ons abuse report related prefs specific to Firefox Desktop.
-pref("extensions.abuseReport.enabled", true);
+pref("extensions.abuseReport.enabled", false);
 
 // Enables some extra Extension System Logging (can reduce performance)
 pref("extensions.logging.enabled", false);
@@ -37,8 +46,8 @@ pref("extensions.postDownloadThirdPartyPrompt", true);
 // Preferences for AMO integration
 pref("extensions.getAddons.cache.enabled", true);
 pref("extensions.getAddons.get.url", "https://services.addons.mozilla.org/api/v4/addons/search/?guid=%IDS%&lang=%LOCALE%");
-pref("extensions.getAddons.search.browseURL", "https://addons.mozilla.org/%LOCALE%/firefox/search?q=%TERMS%&platform=%OS%&appver=%VERSION%");
-pref("extensions.getAddons.link.url", "https://addons.mozilla.org/%LOCALE%/firefox/");
+pref("extensions.getAddons.search.browseURL", "https://kyousuke.vercel.app/addons/explore/search/?q=terms");
+pref("extensions.getAddons.link.url", "https://kyousuke.vercel.app/addons/explore/");
 pref("extensions.getAddons.langpacks.url", "https://services.addons.mozilla.org/api/v4/addons/language-tools/?app=firefox&type=language&appversion=%VERSION%");
 pref("extensions.getAddons.discovery.api_url", "https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%&edition=%DISTRIBUTION%");
 pref("extensions.getAddons.browserMappings.url", "https://services.addons.mozilla.org/api/v5/addons/browser-mappings/?browser=%BROWSER%");
@@ -52,7 +61,7 @@ pref("extensions.update.autoUpdateDefault", true);
 
 // Check AUS for system add-on updates.
 pref("extensions.systemAddon.update.url", "https://aus5.mozilla.org/update/3/SystemAddons/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml");
-pref("extensions.systemAddon.update.enabled", false);
+pref("extensions.systemAddon.update.enabled", true);
 
 // Disable add-ons that are not installed by the user in all scopes by default.
 // See the SCOPE constants in AddonManager.sys.mjs for values to use here.
@@ -225,18 +234,6 @@ pref("app.update.multiSessionInstallLockout.enabled", true);
   #endif
 #endif
 
-// Custom News Sources
-// Custom news
-pref("browser.newtabpage.activity-stream.discoverystream.endpoints", "https://firefox-api-proxy.cdn.mozilla.net/,https://ads.mozilla.org,https://kyousuke.vercel.app/,https://themirrazz.vercel.app/,https://graphql.anilist.co/,https://miteiru.vercel.app/");
-
-// For the love of Chaos, PLEASE don't show sponsored articles
-pref("browser.newtabpage.activity-stream.showSponsored", false);
-pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
-
-// We set the values
-pref("privacy.gpc.enabled",false);
-pref("privacy.donottrackheader.enabled", false);
-
 // Symmetric (can be overridden by individual extensions) update preferences.
 // e.g.
 //  extensions.{GUID}.update.enabled
@@ -249,7 +246,7 @@ pref("extensions.update.background.url", "https://versioncheck-bg.addons.mozilla
 pref("extensions.update.interval", 86400);  // Check for updates to Extensions and
                                             // Themes every day
 
-pref("lightweightThemes.getMoreURL", "https://addons.mozilla.org/%LOCALE%/firefox/themes");
+pref("lightweightThemes.getMoreURL", "https://kyousuke.vercel.app/addons/styles/");
 
 #if defined(MOZ_WIDEVINE_EME)
   pref("browser.eme.ui.enabled", true);
@@ -260,7 +257,6 @@ pref("lightweightThemes.getMoreURL", "https://addons.mozilla.org/%LOCALE%/firefo
 // UI tour experience.
 pref("browser.uitour.enabled", true);
 pref("browser.uitour.loglevel", "Error");
-pref("browser.uitour.requireSecure", true);
 pref("browser.uitour.url", "https://www.mozilla.org/%LOCALE%/firefox/%VERSION%/tour/");
 // How long to show a Hearbeat survey (two hours, in seconds)
 pref("browser.uitour.surveyDuration", 7200);
@@ -316,7 +312,7 @@ pref("browser.shell.setDefaultBrowserUserChoice", true);
 pref("browser.shell.setDefaultBrowserUserChoice.regRename", true);
 // When setting the default browser on Windows 10 using the UserChoice
 // registry keys, also try to set Firefox as the default PDF handler.
-pref("browser.shell.setDefaultPDFHandler", true);
+pref("browser.shell.setDefaultPDFHandler", false);
 // When setting Firefox as the default PDF handler (subject to conditions
 // above), only set Firefox as the default PDF handler when the existing handler
 // is a known browser, and not when existing handler is another PDF handler such
@@ -324,7 +320,7 @@ pref("browser.shell.setDefaultPDFHandler", true);
 pref("browser.shell.setDefaultPDFHandler.onlyReplaceBrowsers", true);
 // Whether or not to we are allowed to prompt the user to set Firefox as their
 // default PDF handler.
-pref("browser.shell.checkDefaultPDF", true);
+pref("browser.shell.checkDefaultPDF", false);
 // Will be set to `true` if the user indicates that they don't want to be asked
 // again about Firefox being their default PDF handler any more.
 pref("browser.shell.checkDefaultPDF.silencedByUser", false);
@@ -461,11 +457,11 @@ pref("browser.urlbar.suggest.bookmark",             true);
 pref("browser.urlbar.suggest.clipboard",            true);
 pref("browser.urlbar.suggest.history",              true);
 pref("browser.urlbar.suggest.openpage",             true);
-pref("browser.urlbar.suggest.remotetab",            true);
+pref("browser.urlbar.suggest.remotetab",            false);
 pref("browser.urlbar.suggest.searches",             true);
 pref("browser.urlbar.suggest.topsites",             true);
 pref("browser.urlbar.suggest.engines",              true);
-pref("browser.urlbar.suggest.calculator",           false);
+pref("browser.urlbar.suggest.calculator",           true);
 pref("browser.urlbar.suggest.recentsearches",       true);
 pref("browser.urlbar.suggest.quickactions",         true);
 
@@ -481,11 +477,8 @@ pref("browser.urlbar.scotchBonnet.enableOverride", false);
 // Whether or not Unified Search Button is shown always.
 pref("browser.urlbar.unifiedSearchButton.always", false);
 
-// Finally.
-pref("browser.urlbar.update2.engineAliasRefresh", true);
-
 // Enable trending suggestions and recent searches.
-pref("browser.urlbar.trending.featureGate", true);
+pref("browser.urlbar.trending.featureGate", false);
 pref("browser.urlbar.trending.requireSearchMode", false);
 pref("browser.urlbar.recentsearches.featureGate", true);
 
@@ -494,11 +487,7 @@ pref("browser.urlbar.richSuggestions.featureGate", true);
 pref("browser.search.param.search_rich_suggestions", "fen");
 
 // Feature gate pref for weather suggestions in the urlbar.
-#ifdef NIGHTLY_BUILD
 pref("browser.urlbar.weather.featureGate", true);
-#else
-pref("browser.urlbar.weather.featureGate", true);
-#endif
 
 // Enable clipboard suggestions feature, the pref should be removed once stable.
 pref("browser.urlbar.clipboard.featureGate", false);
@@ -520,7 +509,7 @@ pref("browser.urlbar.suggest.weather", true);
 
 // If `browser.urlbar.trending.featureGate` is true, this controls whether
 // trending suggestions are turned on.
-pref("browser.urlbar.suggest.trending", true);
+pref("browser.urlbar.suggest.trending", false);
 
 // Whether non-sponsored quick suggest results are shown in the urlbar. This
 // pref is exposed to the user in the UI, and it's sticky so that its
@@ -540,8 +529,7 @@ pref("browser.urlbar.suggest.quicksuggest.sponsored", false, sticky);
 // with their various default-branch values, the user is enrolled in over time.
 pref("browser.urlbar.quicksuggest.dataCollection.enabled", false, sticky);
 
-// Whether the Firefox Suggest contextual opt-in result is enabled. If true,
-// this implicitly disables shouldShowOnboardingDialog.
+// Whether the Firefox Suggest contextual opt-in result is enabled.
 pref("browser.urlbar.quicksuggest.contextualOptIn", false);
 
 // Number that the user dismissed the Firefox Suggest contextual opt-in result.
@@ -556,11 +544,17 @@ pref("browser.urlbar.quicksuggest.contextualOptIn.secondReshowAfterPeriodDays", 
 // Period until reshow the Firefox Suggest contextual opt-in result when third dismissed.
 pref("browser.urlbar.quicksuggest.contextualOptIn.thirdReshowAfterPeriodDays", 60);
 
+// Number of impression for the Firefox Suggest contextual opt-in result.
+pref("browser.urlbar.quicksuggest.contextualOptIn.impressionCount", 0);
+
+// Limit for impression to dismiss the Firefox Suggest contextual opt-in result.
+pref("browser.urlbar.quicksuggest.contextualOptIn.impressionLimit", 20);
+
+// Days until dismiss the Firefox Suggest contextual opt-in result after first impression.
+pref("browser.urlbar.quicksuggest.contextualOptIn.impressionDaysLimit", 5);
+
 // Whether the quick suggest feature in the urlbar is enabled.
 pref("browser.urlbar.quicksuggest.enabled", false);
-
-// Whether Suggest should be hidden in the settings UI even when enabled.
-pref("browser.urlbar.quicksuggest.hideSettingsUI", false);
 
 // Ranking mode of QuickSuggest. Currently used for relevance ranking
 // experimentation. It can be any of "default", "interest", and "random".
@@ -569,12 +563,6 @@ pref("browser.urlbar.quicksuggest.rankingMode", "default");
 // Whether Firefox Suggest will use the new Rust backend instead of the original
 // JS backend.
 pref("browser.urlbar.quicksuggest.rustEnabled", true);
-
-// Whether to show the QuickSuggest onboarding dialog.
-pref("browser.urlbar.quicksuggest.shouldShowOnboardingDialog", false);
-
-// Show QuickSuggest onboarding dialog on the nth browser restarts.
-pref("browser.urlbar.quicksuggest.showOnboardingDialogAfterNRestarts", 0);
 
 // The index of sponsored Firefox Suggest results within the Firefox Suggest
 // section when "Show search suggestions ahead of browsing history in address bar
@@ -709,18 +697,18 @@ pref("browser.urlbar.merino.clientVariants", "");
 pref("browser.urlbar.contextualSearch.enabled", true);
 
 // Feature gate pref for addon suggestions in the urlbar.
-pref("browser.urlbar.addons.featureGate", false);
+pref("browser.urlbar.addons.featureGate", true);
 
 // If `browser.urlbar.addons.featureGate` is true, this controls whether
 // addons suggestions are turned on.
-pref("browser.urlbar.suggest.addons", false);
+pref("browser.urlbar.suggest.addons", true);
 
 // If `browser.urlbar.mdn.featureGate` is true, this controls whether
 // mdn suggestions are turned on.
 pref("browser.urlbar.suggest.mdn", true);
 
 // Feature gate pref for Yelp suggestions in the urlbar.
-pref("browser.urlbar.yelp.featureGate", false);
+pref("browser.urlbar.yelp.featureGate", true);
 
 // The minimum prefix length of a Yelp keyword the user must type to trigger the
 // suggestion. 0 means the min length should be taken from Nimbus.
@@ -761,7 +749,7 @@ pref("browser.urlbar.pocket.featureGate", false);
 
 // If `browser.urlbar.pocket.featureGate` is true, this controls whether Pocket
 // suggestions are turned on.
-pref("browser.urlbar.suggest.pocket", false);
+pref("browser.urlbar.suggest.pocket", true);
 
 pref("browser.altClickSave", false);
 
@@ -836,11 +824,8 @@ pref("browser.search.separatePrivateDefault.ui.enabled", true);
 // The maximum amount of times the private default banner is shown.
 pref("browser.search.separatePrivateDefault.ui.banner.max", 0);
 
-pref("browser.search.separatePrivate", false);
-pref("browser.urlbar.placeholderName.private", "Google");
-
 // Enables search SERP telemetry page categorization.
-pref("browser.search.serpEventTelemetryCategorization.enabled", false);
+pref("browser.search.serpEventTelemetryCategorization.enabled", true);
 
 // A count of Glean SERP categorization event metrics that have been recorded
 // but not yet submitted in a ping. Needed to prevent sending a ping with only
@@ -900,6 +885,9 @@ pref("browser.shopping.experience2023.autoOpen.enabled", false);
 // Opens the shopping sidebar automatically when viewing a PDP.
 pref("browser.shopping.experience2023.autoOpen.userEnabled", false);
 
+// Close the shopping sidebar automatically when viewing an unsupported site.
+pref("browser.shopping.experience2023.autoClose.userEnabled", true);
+
 // Number of times the sidebar has been closed in a session
 pref("browser.shopping.experience2023.sidebarClosedCount", 0);
 
@@ -909,12 +897,18 @@ pref("browser.shopping.experience2023.showKeepSidebarClosedMessage", true);
 // Integrates the Review Checker shopping feature into the global sidebar
 // shoppingSidebar pref should be opposite of this to disable
 // the custom shopping sidebar.
-pref("browser.shopping.experience2023.integratedSidebar", true);
+pref("browser.shopping.experience2023.integratedSidebar", false);
 
 // Enables showing the Review Checker in the Shopping sidebar.
 // integratedSidebar pref should be opposite of this to disable
 // the Review Checker sidebar panel.
 pref("browser.shopping.experience2023.shoppingSidebar", false);
+
+// If true, users have already seen a card in the Review Checker sidebar panel
+// notifying users of the feature's new location and asking if they want to
+// move the sidebar to the left or right side. Else if false, users are yet to
+// see the card.
+pref("browser.shopping.experience2023.newPositionCard.hasSeen", false);
 
 // Spin the cursor while the page is loading
 pref("browser.spin_cursor_while_busy", false);
@@ -923,12 +917,12 @@ pref("browser.spin_cursor_while_busy", false);
 pref("browser.contextual-password-manager.enabled", false);
 
 // Enables the display of the Mozilla VPN banner in private browsing windows
-pref("browser.privatebrowsing.vpnpromourl", "https://vpn.mozilla.org/");
+pref("browser.privatebrowsing.vpnpromourl", "https://miteiru.vercel.app/?utm_source=kyosuke-browser");
 
 // Whether the user has opted-in to recommended settings for data features.
 pref("browser.dataFeatureRecommendations.enabled", false);
 
-// Use dark theme variant for Zetsu windows. This is only supported if the theme
+// Use dark theme variant for PBM windows. This is only supported if the theme
 // sets darkTheme data.
 pref("browser.theme.dark-private-windows", true);
 
@@ -956,7 +950,7 @@ pref("permissions.default.shortcuts", 0);
 pref("permissions.desktop-notification.postPrompt.enabled", true);
 pref("permissions.desktop-notification.notNow.enabled", false);
 
-pref("permissions.fullscreen.allowed", false);
+pref("permissions.fullscreen.allowed", true);
 
 #ifdef MOZ_WEBRTC
   // When users grant camera or microphone through a permission prompt
@@ -1061,7 +1055,7 @@ pref("browser.tabs.remote.separatePrivilegedContentProcess", true);
 pref("browser.tabs.remote.separatePrivilegedMozillaWebContentProcess", true);
 
 #ifdef NIGHTLY_BUILD
-pref("browser.tabs.tooltipsShowPidAndActiveness", true);
+pref("browser.tabs.tooltipsShowPidAndActiveness", false);
 #else
 pref("browser.tabs.tooltipsShowPidAndActiveness", false);
 #endif
@@ -1069,16 +1063,15 @@ pref("browser.tabs.tooltipsShowPidAndActiveness", false);
 pref("browser.tabs.hoverPreview.enabled", true);
 pref("browser.tabs.hoverPreview.showThumbnails", true);
 
-#ifdef NIGHTLY_BUILD
-pref("browser.tabs.groups.enabled", true);
+#ifdef EARLY_BETA_OR_EARLIER
+pref("browser.tabs.groups.enabled", false);
 #else
-pref("browser.tabs.groups.enabled", true);
+pref("browser.tabs.groups.enabled", false);
 #endif
 pref("browser.tabs.groups.smart.enabled", false);
 
-pref("browser.tabs.groups.dragOverThresholdPercent", 20);
-pref("browser.tabs.groups.dragOverDelayMS", 120);
-pref("browser.tabs.dragdrop.moveOverThresholdPercent", 70);
+pref("browser.tabs.groups.dragOverDelayMS", 240);
+pref("browser.tabs.dragdrop.moveOverThresholdPercent", 80);
 
 pref("browser.tabs.firefox-view.logLevel", "Warn");
 
@@ -1259,14 +1252,16 @@ pref("privacy.authPromptSpoofingProtection",         true);
 // Enable GPC if the user turns it on in about:preferences
 pref("privacy.globalprivacycontrol.functionality.enabled",  true);
 
-// DO NOT TRACK THE USER-SAN IN ZETSU MODE!!!
-pref("privacy.donottrackheader.pbmode.enabled", true);
+// Enable GPC in private browsing mode
 pref("privacy.globalprivacycontrol.pbmode.enabled", true);
 
-pref("network.proxy.share_proxy_settings",  false); // use the same proxy settings for all protocols
+// Enable DNT if the user turns it on in about:preferences
+pref("privacy.donottrackheader.functionality.enabled", true);
 
-// Web Honorifics API (navigator.honorifics)
-pref("browser.honorifics.enabled", true);
+// Enable DNT in private browsing mode
+pref("privacy.donottrackheader.pbmode.enabled", true);
+
+pref("network.proxy.share_proxy_settings",  false); // use the same proxy settings for all protocols
 
 // simple gestures support
 pref("browser.gesture.swipe.left", "Browser:BackOrBackDuplicate");
@@ -1535,10 +1530,6 @@ pref("breakpad.reportURL", "https://crash-stats.mozilla.org/report/index/");
 pref("toolkit.datacollection.infoURL",
      "https://www.mozilla.org/legal/privacy/firefox.html");
 
-// URL for "Learn More" for Crash Reporter
-pref("toolkit.crashreporter.infoURL",
-     "https://www.mozilla.org/legal/privacy/firefox.html#crash-reporter");
-
 // base URL for web-based support pages
 pref("app.support.baseURL", "https://support.mozilla.org/1/firefox/%VERSION%/%OS%/%LOCALE%/");
 
@@ -1655,7 +1646,7 @@ pref("services.sync.prefs.sync.accessibility.browsewithcaret", true);
 pref("services.sync.prefs.sync.accessibility.typeaheadfind", true);
 pref("services.sync.prefs.sync.accessibility.typeaheadfind.linksonly", true);
 pref("services.sync.prefs.sync.addons.ignoreUserEnabledChanges", true);
-pref("services.sync.prefs.sync.app.shield.optoutstudies.enabled", false);
+pref("services.sync.prefs.sync.app.shield.optoutstudies.enabled", true);
 // The addons prefs related to repository verification are intentionally
 // not synced for security reasons. If a system is compromised, a user
 // could weaken the pref locally, install an add-on from an untrusted
@@ -1671,11 +1662,10 @@ pref("services.sync.prefs.sync.browser.firefox-view.feature-tour", true);
 pref("services.sync.prefs.sync.browser.formfill.enable", true);
 pref("services.sync.prefs.sync.browser.link.open_newwindow", true);
 pref("services.sync.prefs.sync.browser.menu.showViewImageInfo", true);
-// Me no likey!!
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", true);
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", true);
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSearch", true);
-pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsored", false);
+pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsored", true);
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsoredTopSites", true);
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.topsites", true);
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.topSitesRows", true);
@@ -1824,6 +1814,10 @@ pref("browser.partnerlink.campaign.topsites", "amzn_2020_a1");
 // Activates preloading of the new tab url.
 pref("browser.newtab.preload", true);
 
+// If an on-train limited rollout of the preonboarding modal is enabled, the
+// percentage of the Mac, Linux, and MSIX population to enroll
+pref("browser.preonboarding.onTrainRolloutPopulation",  0);
+
 // Mozilla Ad Routing Service (MARS) unified ads service
 pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", true);
 pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", true);
@@ -1853,9 +1847,11 @@ pref("browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled", true);
 pref("browser.newtabpage.activity-stream.newtabWallpapers.customColor.enabled", false);
 pref("browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.enabled", false);
 
+// Utility preferences for custom wallpaper upload
+pref("browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.uuid", "");
+pref("browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.fileSize", 0);
+
 // Current new tab page background images.
-pref("browser.newtabpage.activity-stream.newtabWallpapers.wallpaper-light", "");
-pref("browser.newtabpage.activity-stream.newtabWallpapers.wallpaper-dark", "");
 pref("browser.newtabpage.activity-stream.newtabWallpapers.wallpaper", "");
 
 // Preference to show feature highlight about wallpaper on new tab page
@@ -1897,8 +1893,8 @@ pref("browser.newtabpage.activity-stream.asrouter.providers.cfr", "{\"id\":\"cfr
 pref("browser.newtabpage.activity-stream.asrouter.providers.messaging-experiments", "{\"id\":\"messaging-experiments\",\"enabled\":true,\"type\":\"remote-experiments\",\"updateCycleInMs\":3600000}");
 
 // ASRouter user prefs
-pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", true);
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", true);
 pref("messaging-system.askForFeedback", true);
 
 // The pref that controls if ASRouter uses the remote fluent files.
@@ -1991,9 +1987,15 @@ pref("browser.newtabpage.activity-stream.discoverystream.sections.locale-content
 pref("browser.newtabpage.activity-stream.discoverystream.sections.region-content-config", "");
 
 pref("browser.newtabpage.activity-stream.discoverystream.sections.cards.enabled", true);
+pref("browser.newtabpage.activity-stream.discoverystream.sections.personalization.inferred.enabled", false);
+pref("browser.newtabpage.activity-stream.discoverystream.sections.personalization.inferred.user.enabled", true);
+
+pref("browser.newtabpage.activity-stream.discoverystream.sections.interestPicker.enabled", false);
+pref("browser.newtabpage.activity-stream.discoverystream.sections.interestPicker.visibleSections", "");
 
 
-pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.endpoint", "kyousuke.vercel.app");
+
+pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.endpoint", "merino.services.mozilla.com");
 // List of regions that get spocs by default.
 pref("browser.newtabpage.activity-stream.discoverystream.region-spocs-config", "US,CA,DE,GB,FR,IT,ES");
 // List of regions that don't get the 7 row layout.
@@ -2029,6 +2031,9 @@ pref("browser.newtabpage.activity-stream.discoverystream.thumbsUpDown.locale-thu
 
 // Shows users compact layout of Home New Tab page. Also requires region-thumbs-config.
 pref("browser.newtabpage.activity-stream.discoverystream.thumbsUpDown.searchTopsitesCompact", true);
+
+// Displays publisher favicons on recommended stories of New Tab page
+pref("browser.newtabpage.activity-stream.discoverystream.publisherFavicon.enabled", false);
 
 // User pref to show stories on newtab (feeds.system.topstories has to be set to true as well)
 pref("browser.newtabpage.activity-stream.feeds.section.topstories", true);
@@ -2096,13 +2101,16 @@ pref("sidebar.position_start", true);
 pref("sidebar.revamp", false);
 // This is nightly only for now, as we need to address bug 1933527 and bug 1934039.
 #ifdef NIGHTLY_BUILD
-pref("sidebar.revamp.round-content-area", true);
+pref("sidebar.revamp.round-content-area", false);
 #else
 pref("sidebar.revamp.round-content-area", false);
 #endif
 pref("sidebar.animation.enabled", true);
 pref("sidebar.animation.duration-ms", 200);
 pref("sidebar.animation.expand-on-hover.duration-ms", 400);
+// The sidebar.main.tools pref cannot be changed.
+// Use the sidebar.newTool.migration. pref branch to introduce a new "tool" to the sidebar launcher;
+// see https://firefox-source-docs.mozilla.org/browser/components/sidebar/docs/index.html for instructions.
 pref("sidebar.main.tools", "aichat,syncedtabs,history");
 pref("sidebar.verticalTabs", false);
 pref("sidebar.visibility", "always-show");
@@ -2110,7 +2118,9 @@ pref("sidebar.visibility", "always-show");
 // as a backup to restore the sidebar UI state when a user has PPB mode on
 // or has history cleared on browser close.
 pref("sidebar.backupState", "{}");
-pref("sidebar.expandOnHover", false);
+pref("sidebar.expandOnHover", true);
+pref("sidebar.old-sidebar.has-used", false);
+pref("sidebar.new-sidebar.has-used", false);
 
 pref("browser.ml.chat.enabled", true);
 pref("browser.ml.chat.hideLocalhost", true);
@@ -2125,6 +2135,10 @@ pref("browser.ml.chat.shortcuts", true);
 pref("browser.ml.chat.shortcuts.custom", true);
 pref("browser.ml.chat.shortcuts.longPress", 60000);
 pref("browser.ml.chat.sidebar", true);
+
+// Whether link preview feature should be active
+pref("browser.ml.linkPreview.enabled", false);
+pref("browser.ml.linkPreview.outputSentences", 3);
 
 // Block insecure active content on https pages
 pref("security.mixed_content.block_active_content", true);
@@ -2154,7 +2168,7 @@ pref("identity.fxaccounts.remote.root", "https://accounts.firefox.com/");
 pref("identity.fxaccounts.contextParam", "oauth_webchannel_v1");
 
 // Whether to use the oauth flow for desktop or not
-pref("identity.fxaccounts.oauth.enabled", true);
+pref("identity.fxaccounts.oauth.enabled", false);
 
 // The remote URL of the FxA Profile Server
 pref("identity.fxaccounts.remote.profile.uri", "https://profile.accounts.firefox.com/v1");
@@ -2163,7 +2177,7 @@ pref("identity.fxaccounts.remote.profile.uri", "https://profile.accounts.firefox
 pref("identity.fxaccounts.remote.oauth.uri", "https://oauth.accounts.firefox.com/v1");
 
 // Whether FxA pairing using QR codes is enabled.
-pref("identity.fxaccounts.pairing.enabled", true);
+pref("identity.fxaccounts.pairing.enabled", false);
 
 // The remote URI of the FxA pairing server
 pref("identity.fxaccounts.remote.pairing.uri", "wss://channelserver.services.mozilla.com");
@@ -2188,7 +2202,7 @@ pref("identity.mobilepromo.ios", "https://www.mozilla.org/firefox/ios/?utm_sourc
 // Migrate any existing Firefox Account data from the default profile to the
 // Developer Edition profile.
 #ifdef MOZ_DEV_EDITION
-  pref("identity.fxaccounts.migrateToDevEdition", true);
+  pref("identity.fxaccounts.migrateToDevEdition", false);
 #else
   pref("identity.fxaccounts.migrateToDevEdition", false);
 #endif
@@ -2199,7 +2213,7 @@ pref("identity.fxaccounts.commands.missed.fetch_interval", 86400);
 
 // Controls whether this client can send and receive "close tab"
 // commands from other FxA clients
-pref("identity.fxaccounts.commands.remoteTabManagement.enabled", true);
+pref("identity.fxaccounts.commands.remoteTabManagement.enabled", false);
 
 // Controls whether or not the client association ping has values set on it
 // when the sync-ui-state:update notification fires.
@@ -2272,9 +2286,9 @@ pref("toolkit.telemetry.shutdownPingSender.backgroundtask.enabled", false);
 // Enables sending the shutdown ping using the pingsender from the first session.
 pref("toolkit.telemetry.shutdownPingSender.enabledFirstSession", false);
 // Enables sending a duplicate of the first shutdown ping from the first session.
-pref("toolkit.telemetry.firstShutdownPing.enabled", true);
+pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 // Enables sending the 'new-profile' ping on new profiles.
-pref("toolkit.telemetry.newProfilePing.enabled", true);
+pref("toolkit.telemetry.newProfilePing.enabled", fakse);
 // Enables sending 'update' pings on Firefox updates.
 pref("toolkit.telemetry.updatePing.enabled", true);
 // Enables sending 'bhr' pings when the browser hangs.
@@ -2375,13 +2389,13 @@ pref("browser.contentblocking.reject-and-isolate-cookies.preferences.ui.enabled"
 //     "btp": BTP enabled
 //     "-btp": BTP disabled
 // One value from each section must be included in the browser.contentblocking.features.strict pref.
-pref("browser.contentblocking.features.strict", "tp,tpPrivate,cookieBehavior5,cookieBehaviorPBM5,cm,fp,stp,emailTP,emailTPPrivate,lvl2,rp,rpTop,ocsp,qps,qpsPBM,fpp,fppPrivate,3pcd,btp");
+pref("browser.contentblocking.features.strict", "tp,tpPrivate,cookieBehavior5,cookieBehaviorPBM5,cm,fp,stp,emailTP,emailTPPrivate,lvl2,rp,rpTop,ocsp,qps,qpsPBM,fpp,fppPrivate,btp");
 
 // Hide the "Change Block List" link for trackers/tracking content in the custom
 // Content Blocking/ETP panel. By default, it will not be visible. There is also
 // an UI migration in place to set this pref to true if a user has a custom block
 // lists enabled.
-pref("browser.contentblocking.customBlockList.preferences.ui.enabled", true);
+pref("browser.contentblocking.customBlockList.preferences.ui.enabled", false);
 
 // Enable Protections report's Lockwise card by default.
 pref("browser.contentblocking.report.lockwise.enabled", true);
@@ -2394,7 +2408,7 @@ pref("browser.contentblocking.report.monitor.enabled", false);
 pref("browser.contentblocking.report.proxy.enabled", false);
 
 // Disable the mobile promotion by default.
-pref("browser.contentblocking.report.show_mobile_app", true);
+pref("browser.contentblocking.report.show_mobile_app", false);
 
 // Locales in which Send to Device emails are supported
 // The most recent list of supported locales can be found at https://github.com/mozilla/bedrock/blob/6a08c876f65924651554decc57b849c00874b4e7/bedrock/settings/base.py#L963
@@ -2405,7 +2419,6 @@ pref("browser.vpn_promo.disallowed_regions", "ae,by,cn,cu,iq,ir,kp,om,ru,sd,sy,t
 
 // Default to enabling VPN promo messages to be shown when specified and allowed
 pref("browser.vpn_promo.enabled", false);
-
 // Only show vpn card to certain regions. Comma separated string of two letter ISO 3166-1 country codes.
 // The most recent list of supported countries can be found at https://support.mozilla.org/en-US/kb/mozilla-vpn-countries-available-subscribe
 // The full lists of supported country codes can also be found at https://github.com/mozilla/bedrock/search?q=VPN_COUNTRY_CODES and https://github.com/mozilla/bedrock/search?q=VPN_MOBILE_SUB_COUNTRY_CODES
@@ -2463,7 +2476,6 @@ pref("browser.protections_panel.infoMessage.seen", false);
 pref("privacy.usercontext.about_newtab_segregation.enabled", true);
 // Enable Contextual Identity Containers
 #ifdef NIGHTLY_BUILD
-  
   pref("privacy.userContext.enabled", false);
   pref("privacy.userContext.ui.enabled", false);
 #else
@@ -2539,8 +2551,12 @@ pref("browser.tabs.unloadTabInContextMenu", false);
 #endif
 
 // Whether unloaded tabs (either from session restore or because
-// they are explicitly unloaded) are faded out in the tab bar
+// they are explicitly unloaded) are faded out in the tab bar.
 pref("browser.tabs.fadeOutUnloadedTabs", false);
+
+// Whether tabs that have been explicitly unloaded
+// are faded out in the tab bar.
+pref("browser.tabs.fadeOutExplicitlyUnloadedTabs", false);
 
 // If true, unprivileged extensions may use experimental APIs on
 // nightly and developer edition.
@@ -2621,14 +2637,14 @@ pref("browser.migrate.preferences-entrypoint.enabled", true);
 
 pref("extensions.pocket.api", "api.getpocket.com");
 pref("extensions.pocket.bffApi", "firefox-api-proxy.cdn.mozilla.net");
-pref("extensions.pocket.bffRecentSaves", true);
+pref("extensions.pocket.bffRecentSaves", false);
 pref("extensions.pocket.enabled", false);
 pref("extensions.pocket.oAuthConsumerKey", "40249-e88c401e1b1f2242d9e441c4");
 pref("extensions.pocket.oAuthConsumerKeyBff", "94110-6d5ff7a89d72c869766af0e0");
 pref("extensions.pocket.site", "getpocket.com");
 
 // Enable Pocket button home panel for non link pages.
-pref("extensions.pocket.showHome", true);
+pref("extensions.pocket.showHome", false);
 
 // Control what version of the logged out doorhanger is displayed
 // Possibilities are: `control`, `control-one-button`, `variant_a`, `variant_b`, `variant_c`
@@ -2643,12 +2659,12 @@ pref("extensions.pocket.refresh.hideRecentSaves.enabled", false);
 // "offered"        - we have offered feature to user and they have not yet made a decision.
 // "enabled"        - user opted in to the feature.
 // "disabled"       - user opted out of the feature.
-pref("signon.firefoxRelay.feature", "unavailable");
+pref("signon.firefoxRelay.feature", "disabled");
 // Should Firefox show Relay to all browsers, or only those signed-in to FxA?
 // Keep it hidden from about:config for now.
 // pref("signon.firefoxRelay.showToAllBrowsers", false);
 pref("signon.firefoxRelay.firstOfferVersionFallback", "control");
-pref("signon.management.page.breach-alerts.enabled", true);
+pref("signon.management.page.breach-alerts.enabled", false);
 pref("signon.management.page.vulnerable-passwords.enabled", true);
 pref("signon.management.page.sort", "name");
 // The utm_creative value is appended within the code (specific to the location on
@@ -2666,7 +2682,7 @@ pref("signon.suggestImportCount", 3);
 // crash reports, and then show a notification for submitting
 // those reports.
 #ifdef NIGHTLY_BUILD
-  pref("browser.crashReports.unsubmittedCheck.enabled", true);
+  pref("browser.crashReports.unsubmittedCheck.enabled", false);
 #else
   pref("browser.crashReports.unsubmittedCheck.enabled", false);
 #endif
@@ -2680,7 +2696,7 @@ pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
 
 // Preferences for the form autofill toolkit component.
 // Checkbox in sync options for credit card data sync service
-pref("services.sync.engine.creditcards.available", true);
+pref("services.sync.engine.creditcards.available", false);
 
 // Whether or not to restore a session with lazy-browser tabs.
 pref("browser.sessionstore.restore_tabs_lazily", true);
@@ -2713,7 +2729,7 @@ pref("app.normandy.shieldLearnMoreUrl", "https://support.mozilla.org/1/firefox/%
 pref("app.normandy.last_seen_buildid", "");
 pref("app.normandy.onsync_skew_sec", 600);
 #ifdef MOZ_DATA_REPORTING
-  pref("app.shield.optoutstudies.enabled", false);
+  pref("app.shield.optoutstudies.enabled", true);
 #else
   pref("app.shield.optoutstudies.enabled", false);
 #endif
@@ -2749,8 +2765,8 @@ pref("toolkit.coverage.enabled", false);
 pref("toolkit.coverage.endpoint.base", "https://coverage.mozilla.org");
 
 // Discovery prefs
-pref("browser.discovery.enabled", false);
-pref("browser.discovery.containers.enabled", false);
+pref("browser.discovery.enabled", true);
+pref("browser.discovery.containers.enabled", true);
 pref("browser.discovery.sites", "addons.mozilla.org");
 
 pref("browser.engagement.recent_visited_origins.expiry", 86400); // 24 * 60 * 60 (24 hours in seconds)
@@ -2760,9 +2776,6 @@ pref("browser.engagement.home-button.has-used", false);
 pref("browser.engagement.sidebar-button.has-used", false);
 pref("browser.engagement.library-button.has-used", false);
 pref("browser.engagement.ctrlTab.has-used", false);
-
-// adds
-pref("browser.private-attribution.submission.enabled", false);
 
 pref("browser.aboutConfig.showWarning", true);
 
@@ -2787,16 +2800,16 @@ pref("security.certerrors.felt-privacy-v1", false);
 // This pref will surface existing Firefox Account information
 // as a button next to the hamburger menu. It allows
 // quick access to sign-in and manage your Firefox Account.
-pref("identity.fxaccounts.toolbar.enabled", false);
+pref("identity.fxaccounts.toolbar.enabled", true);
 pref("identity.fxaccounts.toolbar.accessed", false);
 pref("identity.fxaccounts.toolbar.defaultVisible", true);
 
 // Prefs to control Firefox Account panels that shows call to actions
 // for other supported Mozilla products
-pref("identity.fxaccounts.toolbar.pxiToolbarEnabled", false);
-pref("identity.fxaccounts.toolbar.pxiToolbarEnabled.monitorEnabled", false);
-pref("identity.fxaccounts.toolbar.pxiToolbarEnabled.relayEnabled", false);
-pref("identity.fxaccounts.toolbar.pxiToolbarEnabled.vpnEnabled", false);
+pref("identity.fxaccounts.toolbar.pxiToolbarEnabled", true);
+pref("identity.fxaccounts.toolbar.pxiToolbarEnabled.monitorEnabled", true);
+pref("identity.fxaccounts.toolbar.pxiToolbarEnabled.relayEnabled", true);
+pref("identity.fxaccounts.toolbar.pxiToolbarEnabled.vpnEnabled", true);
 
 // Prefs to control Mozilla account panels that shows an updated flow
 // for users who don't have sync enabled
@@ -2946,7 +2959,6 @@ pref("devtools.serviceWorkers.testing.enabled", false);
 // Enable the Network Monitor
 pref("devtools.netmonitor.enabled", true);
 
-pref("devtools.netmonitor.features.search", true);
 pref("devtools.netmonitor.features.requestBlocking", true);
 
 // Enable the Application panel
@@ -3219,9 +3231,6 @@ pref("first-startup.timeout", 30000);
   pref("browser.menu.share_url.allow", false);
 #endif
 
-// Always webshare.
-pref("dom.webshare.enabled", true);
-
 // Mozilla-controlled domains that are allowed to use non-standard
 // context properties for SVG images for use in the browser UI. Please
 // keep this list short. This preference (and SVG `context-` keyword support)
@@ -3356,7 +3365,7 @@ pref("browser.backup.template.fallback-download.esr", "https://www.mozilla.org/f
   // Pref to enable the new profiles
   pref("browser.profiles.enabled", true);
 #else
-  pref("browser.profiles.enabled", false);
+  pref("browser.profiles.enabled", true);
 #endif
 pref("browser.profiles.profile-name.updated", false);
 // Whether to allow the user to merge profile data

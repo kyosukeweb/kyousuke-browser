@@ -128,7 +128,7 @@ permissions-exceptions-saved-passwords-desc = { -brand-short-name } won’t save
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-window2 =
-    .title = Allowed Websites - Add-ons Installation
+    .title = Allowed Websites - Addon Installation
     .style = { permissions-window2.style }
 permissions-exceptions-addons-desc = You can specify which websites are allowed to install add-ons. Type the exact address of the site you want to allow and then click Allow.
 
@@ -142,7 +142,7 @@ permissions-site-autoplay-desc = You can manage the sites that do not follow you
 ## Site Permissions - Notifications
 
 permissions-site-notification-window2 =
-    .title = Settings - Notification Permissions
+    .title = Settings - Notifications
     .style = { permissions-window2.style }
 permissions-site-notification-desc = The following websites have requested to send you notifications. You can specify which websites are allowed to send you notifications. You can also block new requests asking to allow notifications.
 permissions-site-notification-disable-label =
@@ -152,7 +152,7 @@ permissions-site-notification-disable-desc = This will prevent any websites not 
 ## Site Permissions - Location
 
 permissions-site-location-window2 =
-    .title = Settings - Location Permissions
+    .title = Settings - Location
     .style = { permissions-window2.style }
 permissions-site-location-desc = The following websites have requested to access your location. You can specify which websites are allowed to access your location. You can also block new requests asking to access your location.
 permissions-site-location-disable-label =
@@ -162,7 +162,7 @@ permissions-site-location-disable-desc = This will prevent any websites not list
 ## Site Permissions - Virtual Reality
 
 permissions-site-xr-window2 =
-    .title = Settings - Virtual Reality Permissions
+    .title = Settings - Virtual Reality
     .style = { permissions-window2.style }
 permissions-site-xr-desc = The following websites have requested to access your virtual reality devices. You can specify which websites are allowed to access your virtual reality devices. You can also block new requests asking to access your virtual reality devices.
 permissions-site-xr-disable-label =
@@ -172,7 +172,7 @@ permissions-site-xr-disable-desc = This will prevent any websites not listed abo
 ## Site Permissions - Camera
 
 permissions-site-camera-window2 =
-    .title = Settings - Camera Permissions
+    .title = Settings - Camera
     .style = { permissions-window2.style }
 permissions-site-camera-desc = The following websites have requested to access your camera. You can specify which websites are allowed to access your camera. You can also block new requests asking to access your camera.
 permissions-site-camera-disable-label =
@@ -182,7 +182,7 @@ permissions-site-camera-disable-desc = This will prevent any websites not listed
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window2 =
-    .title = Settings - Microphone Permissions
+    .title = Settings - Microphone
     .style = { permissions-window2.style }
 permissions-site-microphone-desc = The following websites have requested to access your microphone. You can specify which websites are allowed to access your microphone. You can also block new requests asking to access your microphone.
 permissions-site-microphone-disable-label =
@@ -194,7 +194,7 @@ permissions-site-microphone-disable-desc = This will prevent any websites not li
 ## "Speaker" refers to an audio output device.
 
 permissions-site-speaker-window =
-    .title = Settings - Speaker Permissions
+    .title = Settings - Speaker Selection
     .style = { permissions-window2.style }
 permissions-site-speaker-desc = The following websites have requested to select an audio output device. You can specify which websites are allowed to select an audio output device.
 

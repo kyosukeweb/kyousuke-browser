@@ -88,7 +88,7 @@ policy-DisablePasswordReveal = Do not allow passwords to be revealed in saved lo
 
 policy-DisablePocket2 = Disable the feature to save webpages to { -pocket-brand-name }.
 
-policy-DisablePrivateBrowsing = Disable Zetsu mode.
+policy-DisablePrivateBrowsing = Disable Private Browsing.
 
 policy-DisableProfileImport = Disable the menu command to Import data from another browser.
 
@@ -205,7 +205,7 @@ policy-PopupBlocking = Allow certain websites to display popups by default.
 
 policy-Preferences = Set and lock the value for a subset of preferences.
 
-policy-PrivateBrowsingModeAvailability = Set availability of Zetsu mode.
+policy-PrivateBrowsingModeAvailability = Set availability of private browsing mode.
 
 policy-PromptForDownloadLocation = Ask where to save files when downloading.
 

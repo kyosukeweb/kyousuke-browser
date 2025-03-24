@@ -134,35 +134,35 @@ main-context-menu-edit-bookmark-with-shortcut =
     .tooltiptext = Edit bookmark ({ $shortcut })
 
 main-context-menu-open-link =
-    .label = Open link
+    .label = Open Link
     .accesskey = O
 
 main-context-menu-open-link-new-tab =
-    .label = Open link in new tab
+    .label = Open Link in New Tab
     .accesskey = T
 
 main-context-menu-open-link-container-tab =
-    .label = Open link in new container tab
+    .label = Open Link in New Container Tab
     .accesskey = w
 
 main-context-menu-open-link-new-window =
-    .label = Open link in new window
+    .label = Open Link in New Window
     .accesskey = d
 
 main-context-menu-open-link-new-private-window =
-    .label = Open link in Zetsu Mode
+    .label = Open Link in New Private Window
     .accesskey = P
 
 main-context-menu-bookmark-link-2 =
-    .label = Add bookmark…
+    .label = Bookmark Link…
     .accesskey = B
 
 main-context-menu-save-link =
-    .label = Save link as…
+    .label = Save Link As…
     .accesskey = k
 
 main-context-menu-save-link-to-pocket =
-    .label = Save link to { -pocket-brand-name }
+    .label = Save Link to { -pocket-brand-name }
     .accesskey = o
 
 ## The access keys for "Copy Link" and "Copy Email Address"
@@ -170,22 +170,22 @@ main-context-menu-save-link-to-pocket =
 ## are mutually exclusive.
 
 main-context-menu-copy-email =
-    .label = Copy email address
+    .label = Copy Email Address
     .accesskey = l
 
 main-context-menu-copy-phone =
-    .label = Copy phone number
+    .label = Copy Phone Number
     .accesskey = o
 
 main-context-menu-copy-link-simple =
-    .label = Copy link
+    .label = Copy Link
     .accesskey = L
 
 # "Copy Clean Link" means that Firefox will remove things from the link you
 # copied, like items that identify you for advertising purposes, and other items
 # sites add into URLs to help them deliver a certain browsing experience.
 main-context-menu-copy-clean-link =
-    .label = Copy clean link
+    .label = Copy Clean Link
     .accesskey = u
 
 ## Media (video/audio) controls
@@ -239,112 +239,112 @@ main-context-menu-media-loop =
 ## because the two context-menu items are mutually exclusive.
 
 main-context-menu-media-show-controls =
-    .label = Show controls
+    .label = Show Controls
     .accesskey = C
 
 main-context-menu-media-hide-controls =
-    .label = Hide controls
+    .label = Hide Controls
     .accesskey = C
 
 ##
 
 main-context-menu-media-video-fullscreen =
-    .label = Full screen
+    .label = Full Screen
     .accesskey = F
 
 main-context-menu-media-video-leave-fullscreen =
-    .label = Exit full screen
+    .label = Exit Full Screen
     .accesskey = u
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
-    .label = Watch in miniplayer
+    .label = Watch in Picture-in-Picture
     .accesskey = u
 
 main-context-menu-image-reload =
-    .label = Reload image
+    .label = Reload Image
     .accesskey = R
 
 main-context-menu-image-view-new-tab =
-    .label = Open image in new tab
+    .label = Open Image in New Tab
     .accesskey = I
 
 main-context-menu-video-view-new-tab =
-    .label = Open video in new tab
+    .label = Open Video in New Tab
     .accesskey = i
 
 main-context-menu-image-copy =
-    .label = Copy image
+    .label = Copy Image
     .accesskey = y
 
 main-context-menu-image-copy-link =
-    .label = Copy image link
+    .label = Copy Image Link
     .accesskey = o
 
 main-context-menu-video-copy-link =
-    .label = Copy video link
+    .label = Copy Video Link
     .accesskey = o
 
 main-context-menu-audio-copy-link =
-    .label = Copy audio link
+    .label = Copy Audio Link
     .accesskey = o
 
 main-context-menu-image-save-as =
-    .label = Save image as…
+    .label = Save Image As…
     .accesskey = v
 
 main-context-menu-image-email =
-    .label = Email image…
+    .label = Email Image…
     .accesskey = g
 
 main-context-menu-image-set-image-as-background =
-    .label = Set image as wallpaper…
+    .label = Set Image as Desktop Background…
     .accesskey = S
 
 main-context-menu-image-copy-text =
-    .label = Copy text from image
+    .label = Copy Text From Image
     .accesskey = x
 
 main-context-menu-image-info =
-    .label = View image info
+    .label = View Image Info
     .accesskey = f
 
 main-context-menu-image-desc =
-    .label = View description
+    .label = View Description
     .accesskey = D
 
 main-context-menu-video-save-as =
-    .label = Save video as…
+    .label = Save Video As…
     .accesskey = v
 
 main-context-menu-audio-save-as =
-    .label = Save audio as…
+    .label = Save Audio As…
     .accesskey = v
 
 main-context-menu-video-take-snapshot =
-    .label = Take snapshot…
+    .label = Take Snapshot…
     .accesskey = S
 
 main-context-menu-video-email =
-    .label = Email video…
+    .label = Email Video…
     .accesskey = a
 
 main-context-menu-audio-email =
-    .label = Email audio…
+    .label = Email Audio…
     .accesskey = a
 
 main-context-menu-save-to-pocket =
-    .label = Save page to { -pocket-brand-name }
+    .label = Save Page to { -pocket-brand-name }
     .accesskey = k
 
 main-context-menu-send-to-device =
-    .label = Send page to device
+    .label = Send Page to Device
     .accesskey = n
 
 # Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
-    .label = Use saved password
+    .label = Use Saved Password
     .accesskey = o
 
 main-context-menu-use-relay-mask =
@@ -352,87 +352,91 @@ main-context-menu-use-relay-mask =
     .accesskey = E
 
 main-context-menu-suggest-strong-password =
-    .label = Suggest strong password…
+    .label = Suggest Strong Password…
     .accesskey = S
 
 main-context-menu-manage-passwords =
-    .label = Manage passwords
+    .label = Manage Passwords
     .accesskey = M
 
 main-context-menu-keyword =
-    .label = Add a keyword for this search…
+    .label = Add a Keyword for this Search…
     .accesskey = K
 
+main-context-menu-add-engine =
+    .label = Add Search Engine
+    .accesskey = S
+
 main-context-menu-link-send-to-device =
-    .label = Send link to device
+    .label = Send Link to Device
     .accesskey = n
 
 main-context-menu-frame =
-    .label = This frame
+    .label = This Frame
     .accesskey = h
 
 main-context-menu-frame-show-this =
-    .label = Show only this rame
+    .label = Show Only This Frame
     .accesskey = S
 
 main-context-menu-frame-open-tab =
-    .label = Open in new tab
+    .label = Open Frame in New Tab
     .accesskey = T
 
 main-context-menu-frame-open-window =
-    .label = Open in New Window
+    .label = Open Frame in New Window
     .accesskey = W
 
 main-context-menu-frame-reload =
-    .label = Reload
+    .label = Reload Frame
     .accesskey = R
 
 main-context-menu-frame-add-bookmark =
-    .label = Add bookmark…
+    .label = Bookmark Frame…
     .accesskey = m
 
 main-context-menu-frame-save-as =
-    .label = Save frame as…
+    .label = Save Frame As…
     .accesskey = F
 
 main-context-menu-frame-print =
-    .label = Print…
+    .label = Print Frame…
     .accesskey = P
 
 main-context-menu-frame-view-source =
-    .label = View source
+    .label = View Frame Source
     .accesskey = V
 
 main-context-menu-frame-view-info =
-    .label = View frame info
+    .label = View Frame Info
     .accesskey = I
 
 main-context-menu-print-selection-2 =
-    .label = Print selection…
+    .label = Print Selection…
     .accesskey = r
 
 main-context-menu-view-selection-source =
-    .label = View source
+    .label = View Selection Source
     .accesskey = e
 
 main-context-menu-take-screenshot =
-    .label = Take screenshot
+    .label = Take Screenshot
     .accesskey = T
 
 main-context-menu-take-frame-screenshot =
-    .label = Take screenshot
+    .label = Take Screenshot
     .accesskey = o
 
 main-context-menu-view-page-source =
-    .label = View source
+    .label = View Page Source
     .accesskey = V
 
 main-context-menu-bidi-switch-text =
-    .label = Switch text direction
+    .label = Switch Text Direction
     .accesskey = w
 
 main-context-menu-bidi-switch-page =
-    .label = Switch page direction
+    .label = Switch Page Direction
     .accesskey = D
 
 main-context-menu-inspect =
@@ -440,7 +444,7 @@ main-context-menu-inspect =
     .accesskey = Q
 
 main-context-menu-inspect-a11y-properties =
-    .label = inspect accessibility properties
+    .label = Inspect Accessibility Properties
 
 main-context-menu-eme-learn-more =
     .label = Learn more about DRM…
@@ -449,9 +453,9 @@ main-context-menu-eme-learn-more =
 # Variables
 #   $containerName (String): The name of the current container
 main-context-menu-open-link-in-container-tab =
-    .label = Open link in new { $containerName } tab
+    .label = Open Link in New { $containerName } Tab
     .accesskey = T
 
 main-context-menu-reveal-password =
-    .label = Reveal password
+    .label = Reveal Password
     .accesskey = v

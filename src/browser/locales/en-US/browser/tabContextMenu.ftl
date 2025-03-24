@@ -4,89 +4,89 @@
 
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
 tab-context-new-tab-open =
-    .label = New Tab to Right
+    .label = New tab to right
     .accesskey = w
 tab-context-new-tab-open-vertical =
-    .label = New Tab Below
+    .label = New tab below
     .accesskey = w
 tab-context-new-group =
-    .label = New Group
+    .label = New group
     .accesskey = G
 reload-tab =
-    .label = Reload Tab
+    .label = Reload tab
     .accesskey = R
 select-all-tabs =
-    .label = Select All Tabs
+    .label = Select all tabs
     .accesskey = S
 tab-context-play-tab =
-    .label = Play Tab
+    .label = Play tab
     .accesskey = l
 tab-context-play-tabs =
-    .label = Play Tabs
+    .label = Play tabs
     .accesskey = y
 duplicate-tab =
-    .label = Duplicate Tab
+    .label = Duplicate tab
     .accesskey = D
 duplicate-tabs =
-    .label = Duplicate Tabs
+    .label = Duplicate tabs
     .accesskey = D
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
-    .label = Close Tabs to Left
+    .label = Close tabs to left
     .accesskey = l
 close-tabs-to-the-start-vertical =
-    .label = Close Tabs Above
+    .label = Close tabs above
     .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
-    .label = Close Tabs to Right
+    .label = Close tabs to right
     .accesskey = i
 close-tabs-to-the-end-vertical =
-    .label = Close Tabs Below
+    .label = Close tabs below
     .accesskey = i
 close-other-tabs =
-    .label = Close Other Tabs
+    .label = Close other tabs
     .accesskey = o
 reload-tabs =
-    .label = Reload Tabs
+    .label = Reload tabs
     .accesskey = R
 pin-tab =
-    .label = Pin Tab
+    .label = Pin tab
     .accesskey = P
 unpin-tab =
-    .label = Unpin Tab
+    .label = Unpin tab
     .accesskey = p
 pin-selected-tabs =
-    .label = Pin Tabs
+    .label = Pin tabs
     .accesskey = P
 unpin-selected-tabs =
-    .label = Unpin Tabs
+    .label = Unpin tabs
     .accesskey = p
 bookmark-selected-tabs =
-    .label = Bookmark Tabs…
+    .label = Add bookmarks…
     .accesskey = B
 tab-context-bookmark-tab =
-    .label = Bookmark Tab…
+    .label = Add bookmark…
     .accesskey = B
 tab-context-open-in-new-container-tab =
-    .label = Open in New Container Tab
+    .label = Open in new container tab
     .accesskey = e
 move-to-start =
-    .label = Move to Start
+    .label = Move to start
     .accesskey = S
 move-to-end =
-    .label = Move to End
+    .label = Move to end
     .accesskey = E
 move-to-new-window =
-    .label = Move to New Window
+    .label = Move to new window
     .accesskey = W
 tab-context-close-multiple-tabs =
-    .label = Close Multiple Tabs
+    .label = Close multiple tabs
     .accesskey = M
 tab-context-close-duplicate-tabs =
-    .label = Close Duplicate Tabs
+    .label = Close duplicate tabs
     .accesskey = u
 tab-context-share-url =
     .label = Share
@@ -98,22 +98,22 @@ tab-context-share-url =
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->
-            [1] Reopen Closed Tab
-           *[other] Reopen Closed Tabs
+            [1] Reopen closed tab
+           *[other] Reopen closed tabs
         }
     .accesskey = o
 tab-context-close-n-tabs =
     .label =
         { $tabCount ->
-            [1] Close Tab
-           *[other] Close { $tabCount } Tabs
+            [1] Close tab
+           *[other] Close { $tabCount } tabs
         }
     .accesskey = C
 tab-context-move-tabs =
     .label =
         { $tabCount ->
-            [1] Move Tab
-           *[other] Move Tabs
+            [1] Move tab
+           *[other] Move tabs
         }
     .accesskey = v
 

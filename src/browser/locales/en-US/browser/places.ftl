@@ -21,7 +21,7 @@ places-open-in-window =
   .label = Open in new window
   .accesskey = N
 places-open-in-private-window =
-  .label = Open in Zetsu Mode
+  .label = Open in zetsu mode
   .accesskey = P
 
 places-empty-bookmarks-folder =
@@ -67,7 +67,7 @@ places-bookmarks-search =
   .placeholder = Search bookmarks
 
 places-forget-domain-data =
-  .label = Forget about this site…
+  .label = Forget About This Site…
   .accesskey = F
 places-sortby-name =
   .label = Sort By Name

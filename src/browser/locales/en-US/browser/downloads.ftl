@@ -32,7 +32,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem-2 =
   .label = { PLATFORM() ->
       [macos] Show in Finder
-     *[other] Show in folder
+     *[other] Show in Folder
   }
   .accesskey = F
 
@@ -42,23 +42,23 @@ downloads-cmd-show-menuitem-2 =
 ##   Example: "Notepad", "Acrobat Reader DC", "7-Zip File Manager"
 
 downloads-cmd-use-system-default =
-  .label = Open in system viewer
+  .label = Open In System Viewer
   .accesskey = I
 # This version is shown when the download's mime type has a valid file handler.
 downloads-cmd-use-system-default-named =
-  .label = Open in { $handler }
+  .label = Open In { $handler }
   .accesskey = I
 
 # We can use the same accesskey as downloads-cmd-always-open-similar-files.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
-  .label = Always open in system viewer
+  .label = Always Open In System Viewer
   .accesskey = w
 # We can use the same accesskey as downloads-cmd-always-open-similar-files.
 # Both should not be visible in the downloads context menu at the same time.
 # This version is shown when the download's mime type has a valid file handler.
 downloads-cmd-always-use-system-default-named =
-  .label = Always open in { $handler }
+  .label = Always Open In { $handler }
   .accesskey = w
 
 ##
@@ -66,24 +66,24 @@ downloads-cmd-always-use-system-default-named =
 # We can use the same accesskey as downloads-cmd-always-use-system-default.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-open-similar-files =
-  .label = Always open similar files
+  .label = Always Open Similar Files
   .accesskey = w
 
 downloads-cmd-show-button-2 =
   .tooltiptext = { PLATFORM() ->
       [macos] Show in Finder
-     *[other] Show in folder
+     *[other] Show in Folder
   }
 
 downloads-cmd-show-panel-2 =
   .aria-label = { PLATFORM() ->
       [macos] Show in Finder
-     *[other] Show in folder
+     *[other] Show in Folder
   }
 downloads-cmd-show-description-2 =
   .value = { PLATFORM() ->
       [macos] Show in Finder
-     *[other] Show in folder
+     *[other] Show in Folder
   }
 
 downloads-cmd-show-downloads =
@@ -93,19 +93,19 @@ downloads-cmd-retry =
 downloads-cmd-retry-panel =
     .aria-label = Retry
 downloads-cmd-go-to-download-page =
-    .label = Go to download page
+    .label = Go To Download Page
     .accesskey = G
 downloads-cmd-copy-download-link =
-    .label = Copy download link
+    .label = Copy Download Link
     .accesskey = L
 downloads-cmd-remove-from-history =
-    .label = Remove from history
+    .label = Remove From History
     .accesskey = e
 downloads-cmd-clear-list =
-    .label = Clear preview panel
+    .label = Clear Preview Panel
     .accesskey = a
 downloads-cmd-clear-downloads =
-    .label = Clear downloads
+    .label = Clear Downloads
     .accesskey = C
 downloads-cmd-delete-file =
     .label = Delete
@@ -113,33 +113,33 @@ downloads-cmd-delete-file =
 
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
-    .label = Allow download
+    .label = Allow Download
     .accesskey = o
 
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
-    .tooltiptext = Remove file
+    .tooltiptext = Remove File
 
 downloads-cmd-remove-file-panel =
-    .aria-label = Remove file
+    .aria-label = Remove File
 
 # This is the tooltip of the action button shown when potentially unwanted
 # downloads are blocked. This opens a dialog where the user can choose
 # whether to unblock or remove the download. Removing is the default option.
 downloads-cmd-choose-unblock =
-    .tooltiptext = Remove file or allow download
+    .tooltiptext = Remove File or Allow Download
 
 downloads-cmd-choose-unblock-panel =
-    .aria-label = Remove file or allow download
+    .aria-label = Remove File or Allow Download
 
 # This is the tooltip of the action button shown when uncommon downloads are
 # blocked.This opens a dialog where the user can choose whether to open the
 # file or remove the download. Opening is the default option.
 downloads-cmd-choose-open =
-    .tooltiptext = Open or remove file
+    .tooltiptext = Open or Remove File
 
 downloads-cmd-choose-open-panel =
-    .aria-label = Open or remove file
+    .aria-label = Open or Remove File
 
 # Displayed when hovering a blocked download, indicates that it's possible to
 # show more information for user to take the next action.
@@ -149,7 +149,7 @@ downloads-show-more-information =
 # Displayed when hovering a complete download, indicates that it's possible to
 # open the file using an app available in the system.
 downloads-open-file =
-    .value = Open file
+    .value = Open File
 
 ## Displayed when the user clicked on a download in process. Indicates that the
 ## downloading file will be opened after certain amount of time using an app
@@ -177,12 +177,12 @@ downloading-file-click-to-open =
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.
 downloads-retry-download =
-    .value = Retry download
+    .value = Retry Download
 
 # Displayed when hovering a download which is able to be cancelled by users,
 # indicates that it's possible to cancel and stop the download.
 downloads-cancel-download =
-    .value = Cancel download
+    .value = Cancel Download
 
 # This string is shown at the bottom of the Downloads Panel when all the
 # downloads fit in the available space, or when there are no downloads in
@@ -211,7 +211,7 @@ downloads-blocked-download-detailed-info = { $url } attempted to automatically d
 ##
 
 downloads-clear-downloads-button =
-    .label = Clear downloads
+    .label = Clear Downloads
     .tooltiptext = Clears completed, canceled and failed downloads
 
 # This string is shown when there are no items in the Downloads view, when it

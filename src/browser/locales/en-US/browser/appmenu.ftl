@@ -24,7 +24,7 @@ appmenuitem-new-tab =
 appmenuitem-new-window =
     .label = New window
 appmenuitem-new-private-window =
-    .label = New window in Zetsu mode
+    .label = New zetsu window
 appmenuitem-history =
   .label = History
 appmenuitem-downloads =
@@ -36,9 +36,9 @@ appmenuitem-addons-and-themes =
 appmenuitem-print =
   .label = Print…
 appmenuitem-find-in-page =
-    .label = Find text…
+    .label = Find in page…
 appmenuitem-translate =
-    .label = Translate…
+    .label = Translate page…
 appmenuitem-zoom =
     .value = Zoom
 appmenuitem-more-tools =
@@ -49,7 +49,7 @@ appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
             [linux] Quit
-           *[other] Exit
+           *[other] Quit
         }
 appmenu-menu-button-closed2 =
     .tooltiptext = Open application menu
@@ -75,7 +75,7 @@ appmenuitem-fullscreen =
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
-  .label = Sign in to sync…
+  .label = Sign in with Firefox…
 appmenu-remote-tabs-turn-on-sync =
   .label = Turn on sync…
 
@@ -117,10 +117,10 @@ appmenu-account-header = Account
 appmenu-fxa-last-sync = Last synced { $time }
     .label = Last synced { $time }
 appmenu-fxa-sync-and-save-data2 = Sync and save data
-appmenu-fxa-signed-in-label = Sign in
+appmenu-fxa-signed-in-label = Sign In
 appmenu-fxa-setup-sync =
     .label = Turn On Syncing…
-appmenu-fxa-setup-sync-new = Turn on
+appmenu-fxa-setup-sync-new = Turn On
 appmenuitem-save-page =
     .label = Save page as…
 
@@ -278,10 +278,10 @@ appmenu-help-switch-device =
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-enter-troubleshoot-mode2 =
-    .label = Debug mode…
+    .label = Troubleshoot Mode…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
-    .label = Turn off debug mode
+    .label = Turn Troubleshoot Mode off
     .accesskey = M
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive

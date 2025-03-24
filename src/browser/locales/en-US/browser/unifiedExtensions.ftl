@@ -6,9 +6,9 @@
 
 ## Panel
 
-unified-extensions-header-title = Add-ons
+unified-extensions-header-title = Addons
 unified-extensions-manage-extensions =
-    .label = Manage add-ons
+    .label = Manage addons
 
 ## An extension in the main list
 
@@ -19,7 +19,7 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Open menu for { $extensionName }
 
-unified-extensions-item-message-manage = Manage add-on
+unified-extensions-item-message-manage = Manage addon
 
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
@@ -31,13 +31,13 @@ unified-extensions-context-menu-pin-to-toolbar =
     .label = Pin to toolbar
 
 unified-extensions-context-menu-manage-extension =
-    .label = Manage add-on
+    .label = Manage addon
 
 unified-extensions-context-menu-remove-extension =
-    .label = Remove add-on
+    .label = Remove addon
 
 unified-extensions-context-menu-report-extension =
-    .label = Report add-on
+    .label = Report addon
 
 unified-extensions-context-menu-move-widget-up =
     .label = Move up
@@ -49,20 +49,20 @@ unified-extensions-context-menu-move-widget-down =
 
 # .heading is processed by moz-message-bar to be used as a heading attribute
 unified-extensions-mb-quarantined-domain-message-3 =
-    .heading = Some add-ons are not allowed
-    .message = To protect your data, some add-ons can’t read or change data on this site. Use the add-on’s settings to allow on sites restricted by { -vendor-short-name }.
+    .heading = Some extensions are not allowed
+    .message = To protect your data, some extensions can’t read or change data on this site. Use the extension’s settings to allow on sites restricted by { -vendor-short-name }.
 
 unified-extensions-mb-quarantined-domain-learn-more = Learn more
-    .aria-label = Learn more: Some add-ons are not allowed
+    .aria-label = Learn more: Some extensions are not allowed
 
-unified-extensions-mb-about-addons-link = Go to add-on settings
+unified-extensions-mb-about-addons-link = Go to extension settings
 
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } disabled
     .message =
-        This add-on violates Mozilla’s policies and has been disabled.
+        This extension violates Mozilla’s policies and has been disabled.
         You can enable it in settings, but this may be risky.
 
 # Variables:
@@ -70,17 +70,17 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } disabled
     .message =
-        This add-on violates Mozilla’s policies and has been disabled.
+        This extension violates Mozilla’s policies and has been disabled.
 
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
     .heading =
         { $extensionsCount ->
-            *[other] { $extensionsCount } add-ons disabled
+            *[other] { $extensionsCount } extensions disabled
         }
     .message =
-        Some of your add-ons have been disabled for violating Mozilla’s policies.
+        Some of your extensions have been disabled for violating Mozilla’s policies.
         You can enable them in settings, but this may be risky.
 
 # Variables:
@@ -88,7 +88,7 @@ unified-extensions-mb-blocklist-warning-multiple =
 unified-extensions-mb-blocklist-error-multiple =
     .heading =
         { $extensionsCount ->
-            *[other] { $extensionsCount } add-ons disabled
+            *[other] { $extensionsCount } extensions disabled
         }
     .message =
-        Some of your add-ons have been disabled for violating Mozilla’s policies.
+        Some of your extensions have been disabled for violating Mozilla’s policies.

@@ -30,7 +30,7 @@ bookmark-overlay-folders-tree =
   .aria-label = Folders
 
 bookmark-overlay-new-folder-button =
-  .label = New folder
+  .label = New Folder
   .accesskey = o
 
 bookmark-overlay-tags-2 =

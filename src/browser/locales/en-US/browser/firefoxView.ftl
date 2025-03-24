@@ -4,7 +4,7 @@
 
 toolbar-button-firefox-view-2 =
   .label = { -firefoxview-brand-name }
-  .tooltiptext = View recent browsing across windows and devices
+  .tooltiptext = View recent browsing across windows
 
 menu-tools-firefox-view =
   .label = { -firefoxview-brand-name }

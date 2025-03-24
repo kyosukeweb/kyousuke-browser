@@ -16,11 +16,11 @@ desktop-entry-x-gnome-full-name = { -brand-shortcut-name } Web Browser
 # The string is a list of keywords separated by semicolons:
 # - Do NOT replace semicolons with other punctuation signs.
 # - The list MUST end with a semicolon.
-desktop-entry-keywords = Internet;WWW;Browser;Web;Explorer;Weeb;
+desktop-entry-keywords = Internet;WWW;Browser;Web;Explorer;
 
 ## Actions are visible in a context menu after right clicking the
 ## taskbar icon, possibly other places depending on the environment.
 
 desktop-action-new-window-name = New Window
-desktop-action-new-private-window-name = Launch Zetsu Mode
+desktop-action-new-private-window-name = Open Zetsu Mode
 desktop-action-open-profile-manager = Open Profile Manager
